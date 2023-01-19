@@ -1,0 +1,52 @@
+{% for count, sing_review in enumerate(review) %}
+<div class="pro__review">
+    <div class="review__thumb">
+        <img src="images/review/1.jpg" alt="review images">
+    </div>
+    <div class="review__details" style="width:720px; height: 250px; margin: 15px 0">
+        <div style="margin-left: 5px;">
+            <h4 style="display: inline-block"><a href="#">{{ sing_review[0].username }}</a></h4>
+            <span style="color: grey">{{ sing_review[1].time_create }}</span>
+        </div>
+        <div class="review__info">
+            <div class="rating-result" style="display: contents">
+                {% for i in range(sing_review[1].rating) %}
+                    <span class="active"></span>
+                {% endfor %}
+                {% for i in range(5 - sing_review[1].rating) %}
+                    <span></span>
+                {% endfor %}
+            </div>
+            <p class="review_size_color_text"><span class="text_review">Цвет : </span><span>{{ sing_review[3] }}</span></p>
+            <p class="review_size_color_text"><span class="text_review">Размер : </span><span>{{ sing_review[1].size_product }} {{ sing_review[1].size_matching }}</span></p>
+        </div>
+            <p style="margin-left: 5px;">{{ sing_review[1].review }}<span></span></p>
+        <div style="margin: 10px 0">
+            {% if sing_review[2]['path_picture'] %}
+            <img style="height: 128px; width: 96px; border-radius: 6px; margin-left: 5px;" src="/static/{{sing_review[2]['path_picture'].split(sep='\n', maxsplit=-1)[0]}}/" alt="product images">
+            {% else %}
+            {% endif %}
+        </div>
+        <div>
+            {% if sing_review[4] != None and  sing_review[5] != None %}
+                {% if sing_review[6] == True %}
+                    <a class="dislike_like_put"  href="javascript:like('like', '{{ sing_review[1].id }}')"><img style="padding-bottom: 6px" id='like_color{{ sing_review[1].id }}' src="{{url_for('static', filename='images/review/like-color.png')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_like{{ sing_review[1].id }}">{{ sing_review[4] }}</span></a>
+                    <a class="dislike_like_put"  href="javascript:dislike('dislike', '{{ sing_review[1].id }}')"><img id='dislike_color{{ sing_review[1].id }}' style="transform:rotate(180deg); padding-top: 6px" src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_dislike{{ sing_review[1].id }}">{{ sing_review[5] }}</span></a>
+                {% elif  sing_review[7] == True  %}
+                    <a class="dislike_like_put"  href="javascript:like('like', '{{ sing_review[1].id }}')"><img style="padding-bottom: 6px" id='like_color{{ sing_review[1].id }}' src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_like{{ sing_review[1].id }}">{{ sing_review[4] }}</span></a>
+                    <a class="dislike_like_put"  href="javascript:dislike('dislike', '{{ sing_review[1].id }}')"><img id='dislike_color{{ sing_review[1].id }}' style="transform:rotate(180deg); padding-top: 6px" src="{{url_for('static', filename='images/review/like-color.png')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_dislike{{ sing_review[1].id }}">{{ sing_review[5] }}</span></a>
+                {% else %}
+                    <a class="dislike_like_put"  href="javascript:like('like', '{{ sing_review[1].id }}')"><img style="padding-bottom: 6px" id='like_color{{ sing_review[1].id }}' src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_like{{ sing_review[1].id }}">{{ sing_review[4] }}</span></a>
+                    <a class="dislike_like_put"  href="javascript:dislike('dislike', '{{ sing_review[1].id }}')"><img id='dislike_color{{ sing_review[1].id }}' style="transform:rotate(180deg); padding-top: 6px" src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_dislike{{ sing_review[1].id }}">{{ sing_review[5] }}</span></a>
+                {% endif %}
+            {% else %}
+                <a class="dislike_like_put"  href="javascript:like('like', '{{ sing_review[1].id }}')"><img style="padding-bottom: 6px" id='like_color{{ sing_review[1].id }}' src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_like{{ sing_review[1].id }}">0</span></a>
+                <a class="dislike_like_put"  href="javascript:dislike('dislike', '{{ sing_review[1].id }}')"><img id='dislike_color{{ sing_review[1].id }}' style="transform:rotate(180deg); padding-top: 6px" src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_dislike{{ sing_review[1].id }}">0</span></a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div style="display: flex; justify-content: center;">
+    <a href="{{ url_for('shopping.review_all', article=review[1].article_product) }}" class="button_review_all button-blue">Перейти ко все отзывам</a>
+</div>

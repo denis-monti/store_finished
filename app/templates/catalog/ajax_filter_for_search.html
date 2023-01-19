@@ -1,0 +1,341 @@
+<div class="htc__shop__left__sidebar">
+  <!-- Start Range -->
+  <!-- End Range -->
+
+  <!-- с элмаркета -->
+  <div class="all_page">
+      <div class="left_block_filter">
+          <form action="#" id="filt-all" method="POST">
+
+          <div class="cd-filter-block htc-grid-range">
+              <h4 class="list_filter section-title-4">FILTER BY PRICE</h4>
+              <div class="cd-filter-content content-shopby">
+                  <div class="price_filter s-filter clear">
+                          <div id="slider-range"></div>
+                          <div class="slider__range--output">
+                              <div class="price__output--wrap">
+                                  <div class="price--output" style="display: flex;">
+                                      <span>Price ₽:</span>
+                                      {{ form.minprice(type='number', class='min_price', id='amount', placeholder='0', title='min_value', onkeydown="javascript: return event.keyCode === 8 ||
+                                        event.keyCode === 46 ? true : !isNaN(Number(event.key))", onchange="filter_value('price')") }}
+                                    <span style="font-weight: bold;"> - </span>
+                                    {{ form.maxprice(type='number', class='max_price', id='mount', placeholder='306300', title='max_value', onkeydown="javascript: return event.keyCode === 8 ||
+                                        event.keyCode === 46 ? true : !isNaN(Number(event.key))", onchange="filter_value('price')") }}
+                                </div>
+                              </div>
+                          </div>
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- с элмаркета -->
+
+
+
+
+          <div class="cd-filter-block htc-grid-range">
+              <h4 class="list_filter section-title-4">CHOOSE BRAND</h4>
+              <ul class="cd-filter-content cd-filters list sidebar__list">
+                  {% if enabled_brand != [] or enabled_color != [] or enabled_size != [] %}
+                  <div>hello</div>
+                      {% for ind, i in enumerate(form.brand) %}
+                        {% for ind2, brand in enumerate(enabled_brand) %}
+                            {% if i.data == filter_brand[ind2] and filter_brand[1] != 'default'%}
+                                {% for ind3, brand_enabled in enumerate(enabled_brand) %}
+                                    {% if i.data == brand_enabled[0] %}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')", checked='checked') }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ brand[1] }}</li>
+                                        {% break %}
+                                    {% elif ind3 == enabled_brand|length - 1 %}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand',  disabled='disabled') }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ 0 }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% break %}
+                            {% elif i.data == brand[0]  %}
+                                {% for ind3, brand_enabled in enumerate(filter_brand) %}
+                                    {% if i.data == brand_enabled and  filter_brand[1] != 'default' %}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')", checked='checked') }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ brand[1] }}</li>
+                                        {% break %}
+                                    {% elif ind3 == filter_brand|length - 1 %}
+                                            <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')") }}
+                                           {{ i.label(i.data) }}</div>
+                                           {{ brand[1] }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% break %}
+                            {% elif ind2 == enabled_brand|length - 1 and filter_color[1] == 'default' and filter_size[1] == 'default' %}
+                                {% for b in enabled_brand %}
+                                    {% if i.data == b[0] and target_form != 'price' %}
+                                        <li class="{{ i.data }}" style="display: flex; justify-content: space-between;"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')") }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ i.label }}</li>
+                                        {% break %}
+                                    {% elif target_form != 'price' %}
+                                        <li class="{{ i.data }}" style="display: flex; justify-content: space-between;"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')") }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ 0 }}</li>
+                                        {% break %}
+                                    {% else %}
+                                        <li class="{{ i.data }}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand',  disabled="disabled") }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ 0 }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% elif ind2 == enabled_brand|length - 1 and (filter_color[1] != 'default' or filter_size[1] != 'default' or target_form == 'price') %}
+                                <li  style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand',  disabled="disabled") }}
+                                   {{ i.label(i.data) }}</div>
+                               {{ 0 }}</li>
+                            {% endif %}
+                        {% endfor %}
+                      {% endfor %}
+                  {% else %}
+                    {% for ind, i in enumerate(form.brand) %}
+                        <li  style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand',  disabled="disabled") }}
+                                   {{ i.label(i.data) }}</div>
+                               {{ 0 }}</li>
+                    {% endfor %}
+                  {% endif %}
+              </ul>
+          </div>
+
+
+          <div class="cd-filter-block htc-grid-range">
+              <h4 class="list_filter section-title-4">CHOOSE COLOUR</h4>
+              <ul class="cd-filter-content cd-filters list sidebar__list">
+                  {% if enabled_brand != [] or enabled_color != [] or enabled_size != [] %}
+                      {% for ind, i in enumerate(form.color) %}
+                        {% for ind2, c in enumerate(enabled_color) %}
+                            {% if i.data == filter_color[ind2] and filter_color[1] != 'default'%}
+                                {% for ind3, color_enabled in enumerate(enabled_color) %}
+                                    {% if i.data == color_enabled[0] %}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')", checked='checked') }}<i class="zmdi zmdi-circle"></i>
+                                           {{ i.label(i.data) }}</div>
+                                       {{ c[1] }}</li>
+                                        {% break %}
+                                    {% elif ind3 == enabled_color|length - 1 %}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', disabled='disabled') }}<i class="zmdi zmdi-circle"></i>
+                                           {{ i.label(i.data) }}</div>
+                                       {{ 0 }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% break %}
+                            {% elif i.data == c[0]  %}
+                                {% for ind3, color_enabled in enumerate(filter_color) %}
+                                    {% if i.data == color_enabled and  filter_color[1] != 'default' %}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')", checked='checked') }}<i class="zmdi zmdi-circle"></i>
+                                           {{ i.label(i.data) }}</div>
+                                       {{ c[1] }}</li>
+                                        {% break %}
+                                    {% elif ind3 == filter_color|length - 1 %}
+                                            <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')") }}<i class="zmdi zmdi-circle"></i>
+                                           {{ i.label(i.data) }}</div>
+                                           {{ c[1] }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% break %}
+                            {% elif ind2 == enabled_color|length - 1 and (filter_brand[1] == 'default' and filter_size[1] == 'default' and target_form != 'price' ) %}
+                                {% for color in enabled_color %}
+                                    {% if i.data == color[0] and target_form != 'price' %}
+                                        <li class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')") }}<i class="zmdi zmdi-circle"></i>
+                                           {{ i.label(i.data) }}</div>
+                                       {{ i.label }}</li>
+                                        {% break %}
+                                    {% elif target_form != 'price' %}
+                                        <li class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')") }}<i class="zmdi zmdi-circle"></i>
+                                           {{ i.label(i.data) }}</div>
+                                       {{ i.label }}</li>
+                                        {% break %}
+                                    {% else %}
+                                        <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color',  disabled='disabled') }}<i class="zmdi zmdi-circle"></i>
+                                           {{ i.label(i.data) }}</div>
+                                       {{ 0 }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% elif ind2 == enabled_color|length - 1 and (filter_brand[1] != 'default' or filter_size[1] != 'default' or target_form == 'price') %}
+                                <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color',  disabled='disabled') }}<i class="zmdi zmdi-circle"></i>
+                                   {{ i.label(i.data) }}</div>
+                               {{ 0 }}</li>
+                            {% endif %}
+                        {% endfor %}
+                      {% endfor %}
+                  {% else %}
+                    {% for ind, i in enumerate(form.color) %}
+                        <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color',  disabled='disabled') }}<i class="zmdi zmdi-circle"></i>
+                                   {{ i.label(i.data) }}</div>
+                               {{ 0 }}</li>
+                    {% endfor %}
+                  {% endif %}
+              </ul>
+          </div>
+
+
+          <div class="cd-filter-block htc-grid-range">
+              <h4 class="list_filter section-title-4">CHOOSE SIZE</h4>
+              <ul class="cd-filter-content cd-filters list sidebar__list">
+                  {% if enabled_brand != [] or enabled_color != [] or enabled_size != [] %}
+                      {% for ind, i in enumerate(form.size) %}
+                        {% for ind2, size in enumerate(enabled_size) %}
+                            {% if i.data|string == filter_size[ind2] and filter_size[1] != 'default'%}
+                                {% for ind3, size_enabled in enumerate(enabled_size) %}
+                                    {% if i.data == size_enabled[0] and size[1] != 0%}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', onclick="filter_value('size')", checked='checked') }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ size[1] }}</li>
+                                        {% break %}
+                                    {% elif ind3 == enabled_size|length - 1 %}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', disabled='disabled') }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ 0 }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% break %}
+                            {% elif i.data == size[0] and size[1] != 0 %}
+                                {% for ind3, size_enabled in enumerate(filter_size) %}
+                                    {% if i.data == size_enabled and  filter_size[1] != 'default' %}
+                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size',onclick="filter_value('size')", checked='checked') }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ size[1] }}</li>
+                                        {% break %}
+                                    {% elif ind3 == filter_size|length - 1 %}
+                                            <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', onclick="filter_value('size')") }}
+                                           {{ i.label(i.data) }}</div>
+                                           {{ size[1] }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% break %}
+                            {% elif ind2 == enabled_size|length - 1 and (filter_brand[1] == 'default' and filter_color[1] == 'default' and  target_form != 'price') %}
+                                {% for size_two_check in enabled_size %}
+                                    {% if i.data == size_two_check[0] and target_form != 'price' %}
+                                        <li class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', onclick="filter_value('size')") }}
+                                           {{ i.label(i.data) }}</div>
+                                        {{ i.label  }}</li>
+                                        {% break %}
+                                    {% elif target_form != 'price' %}
+                                        <li class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', onclick="filter_value('size')") }}
+                                           {{ i.label(i.data) }}</div>
+                                        {{ i.label  }}</li>
+                                        {% break %}
+                                    {% else %}
+                                        <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', disabled='disabled') }}
+                                           {{ i.label(i.data) }}</div>
+                                       {{ 0 }}</li>
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% elif ind2 == enabled_size|length - 1 and (filter_brand[1] != 'default' or filter_color[1] != 'default' or target_form == 'price') %}
+                                <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', disabled='disabled') }}
+                                   {{ i.label(i.data) }}</div>
+                               {{ 0 }}</li>
+                            {% endif %}
+                        {% endfor %}
+                      {% endfor %}
+                  {% else %}
+                    {% for ind, i in enumerate(form.size) %}
+                        <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', disabled='disabled') }}
+                                   {{ i.label(i.data) }}</div>
+                               {{ 0 }}</li>
+                    {% endfor %}
+                  {% endif %}
+              </ul>
+          </div>
+
+              <div style="display: flex; justify-content: space-around; margin: 5px 0;">
+                   {{ form.submit_all_filter(style="width:35%") }}
+                    {{ form.cancel(style="width:35%", onclick="resetForms()") }}
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+<script>
+    var min_p
+    min_p = '{{ minimum_price }}';
+    var max_p
+    max_p = '{{ maximum_price }}';
+    var min_df
+    min_df = '{{ default_minimum_price }}';
+    var max_df
+    max_df = '{{ default_maximum_price }}';
+        $("#slider-range").slider({
+      range: true,
+      min: 0,
+      max: max_df,
+      values: [min_p, max_p],
+      slide: function(event, ui) {
+          $("#amount").val(ui.values[0]) + " - " + $("#mount").val(ui.values[1]);
+      }
+      });
+
+        $( "#slider-range" ).mouseup(function( event ){ // задаем функцию при отпускании кнопки мыши на элементе <div>
+            filter_value('price');
+        });
+
+      $("#amount").val($("#slider-range").slider("values", 0)) +
+          " - " + $("#mount").val($("#slider-range").slider("values", 1));
+
+</script>
+<script>
+        resetForms = function(){
+            document.getElementById("filt_all_filter").reset();
+        }
+
+        function filter_value(target_form){
+
+            var checkbox;
+            checkbox = $('.filter_choice_brand:checked'); // получаем массив чекбоксов
+            var str_brand = '';
+            for(var i=0; i<checkbox.length; i++){// пробегаем весь массив
+                str_brand+=checkbox[i].value+",";// записываем каждое значение в строку и разделяем запятыми
+             // выводим получившуюся строку
+
+            }
+
+            var checkbox;
+            checkbox = $('.filter_choice_color:checked'); // получаем массив чекбоксов
+            var str_color = "";
+            for(var i=0; i<checkbox.length; i++){// пробегаем весь массив
+                str_color+=checkbox[i].value+",";// записываем каждое значение в строку и разделяем запятыми
+             // выводим получившуюся строку
+
+            }
+
+            var checkbox;
+            checkbox = $('.filter_choice_size:checked'); // получаем массив чекбоксов
+            var str_size = "";
+            for(var i=0; i<checkbox.length; i++){// пробегаем весь массив
+                str_size+=checkbox[i].value+",";// записываем каждое значение в строку и разделяем запятыми
+             // выводим получившуюся строку
+
+            }
+
+            $.post( "{{ url_for('catalog.search_ajax')}}", {
+                filter_value_brand: str_brand,
+                filter_value_color: str_color,
+                filter_value_size: str_size,
+                target_form: target_form,
+                ids: '{{ sum_id_clothes }}',
+                type_chapter: '{{ type_chapter }}',
+                min_price: $('.min_price').val(),
+                max_price: $('.max_price').val(),
+             }).done(function(data) {
+                    $('#filter_ajax').html(data)
+             }).fail(function () {
+                alert(str_brand);
+            });
+        }
+    </script>

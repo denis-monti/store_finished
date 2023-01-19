@@ -1,0 +1,1271 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tmart-Minimalist eCommerce HTML5 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for ('static', filename='images/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url_for ('static', filename='apple-touch-icon.png') }}">
+
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork catalog css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/bootstrap.min.css') }}">
+    <!-- Owl Carousel catalog css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/owl.theme.default.min.css') }}">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/core.css') }}">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/shortcode/shortcodes.css') }}">
+    <!-- Theme catalog style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style.css') }}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/responsive.css') }}">
+    <!-- User style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css') }}">
+
+
+
+    <!-- Modernizr JS -->
+    <script src="{{ url_for ('static', filename='js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    <!-- jquery latest version -->
+    <script src="{{ url_for ('static', filename='js/vendor/jquery-1.12.0.min.js') }}"></script>
+    <!-- Bootstrap framework js -->
+    <script src="{{ url_for ('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="{{ url_for ('static', filename='js/plugins.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/slick.min.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/owl.carousel.min.js') }}"></script>
+    <!-- Waypoints.min.js. -->
+    <script src="{{ url_for ('static', filename='js/waypoints.min.js') }}"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="{{ url_for ('static', filename='js/main.js') }}"></script>
+
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Body catalog wrapper start -->
+    <div class="wrapper fixed__footer">
+        <!-- Start Header Style -->
+        <header id="header" class="htc-header header--3 bg__white">
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__area sticky__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+                            <div class="logo">
+                                <a href="{{ url_for ('main.index')}}">
+                                    <img src="{{ url_for ('static', filename='images/logo/logo.png') }}" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Start MAinmenu Ares -->
+                        <div class="col-md-8 col-lg-8 col-sm-6 col-xs-6">
+                            <nav class="mainmenu__nav hidden-xs hidden-sm">
+                                <ul class="main__menu">
+                                    <li class="drop"><a href="../main/index.html">Home</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../main/index.html">Home 1</a></li>
+                                            <li><a href="index-2.html">Home 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="portfolio-gutter-box-3.html">portfolio</a>
+                                        <ul class="dropdown">
+                                            <li><a href="portfolio-gutter-box-3.html">Boxed Gutter 3 Col</a></li>
+                                            <li><a href="portfolio-gutter-full-wide-4.html">Wide Gutter 4 Col </a></li>
+                                            <li><a href="portfolio-card-box-3.html">Card Gutter 3 Col </a></li>
+                                            <li><a href="portfolio-masonry-3.html">Masonry Box 3 Col </a></li>
+                                            <li><a href="portfolio-gutter-masonry-fullwide-4.html">Masonry Wide 4 Col </a></li>
+                                            <li><a href="portfolio-gutter-box-3-carousel.html">carousel Gutter 3 Col </a></li>
+                                            <li><a href="portfolio-justified-box-3.html">justified box 3 Col</a></li>
+                                            <li><a href="single-portfolio-gallery.html">Portfolio Details </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="blog.html">Blog</a>
+                                        <ul class="dropdown">
+                                            <li><a href="blog.html">blog 3 column</a></li>
+                                            <li><a href="blog-2-col-rightsidebar.html">2 col right siderbar</a></li>
+                                            <li><a href="blog-details-left-sidebar.html"> blog details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="shop.html">Shop</a>
+                                        <ul class="dropdown mega_dropdown">
+                                            <!-- Start Single Mega MEnu -->
+                                            <li><a class="mega__title" href="shop.html">shop layout</a>
+                                                <ul class="mega__item">
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Single Mega MEnu -->
+                                            <!-- Start Single Mega MEnu -->
+                                            <li><a class="mega__title" href="shop.html">product details layout</a>
+                                                <ul class="mega__item">
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Single Mega MEnu -->
+                                            <!-- Start Single Mega MEnu -->
+                                            <li>
+                                                <ul class="mega__item">
+                                                    <li>
+                                                        <div class="mega-item-img">
+                                                            <a href="shop.html">
+                                                                <img src="images/feature-img/3.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Single Mega MEnu -->
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="#">pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../about.html">about</a></li>
+                                            <li><a href="shop.html">shop</a></li>
+                                            <li><a href="shop-sidebar.html">shop sidebar</a></li>
+                                            <li><a href="product-details-sticky-right.html">product details</a></li>
+                                            <li><a href="../cart.html">cart</a></li>
+                                            <li><a href="wishlist.html">wishlist</a></li>
+                                            <li><a href="checkout.html">checkout</a></li>
+                                            <li><a href="team.html">team</a></li>
+                                            <li><a href="login-register.html">login & register</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="mobile-menu clearfix visible-xs visible-sm">
+                                <nav id="mobile_dropdown">
+                                    <ul>
+                                        <li><a href="index.html">Home</a>
+                                            <ul>
+                                                <li><a href="index.html">Home 1</a></li>
+                                                <li><a href="index-2.html">Home 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">portfolio</a>
+                                            <ul class="dropdown">
+                                                <li><a href="portfolio-gutter-box-3.html">Boxed Gutter 3 Col</a></li>
+                                                <li><a href="portfolio-gutter-full-wide-4.html">Wide Gutter 4 Col </a></li>
+                                                <li><a href="portfolio-card-box-3.html">Card Gutter 3 Col </a></li>
+                                                <li><a href="portfolio-masonry-3.html">Masonry Box 3 Col </a></li>
+                                                <li><a href="portfolio-gutter-masonry-fullwide-4.html">Masonry Wide 4 Col </a></li>
+                                                <li><a href="portfolio-gutter-box-3-carousel.html">carousel Gutter 3 Col </a></li>
+                                                <li><a href="portfolio-justified-box-3.html">justified box 3 Col</a></li>
+                                                <li><a href="single-portfolio-gallery.html">Portfolio Details </a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog.html">blog</a>
+                                            <ul>
+                                                <li><a href="blog.html">blog 3 column</a></li>
+                                                <li><a href="blog-2-col-rightsidebar.html">2 col right siderbar</a></li>
+                                                <li><a href="blog-details-left-sidebar.html"> blog details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">pages</a>
+                                            <ul>
+                                                <li><a href="../about.html">about</a></li>
+                                                <li><a href="shop.html">shop</a></li>
+                                                <li><a href="../catalog/shop-sidebar.html">shop sidebar</a></li>
+                                                <li><a href="../catalog/product-details-sticky-right.html">product details</a></li>
+                                                <li><a href="../cart.html">cart</a></li>
+                                                <li><a href="wishlist.html">wishlist</a></li>
+                                                <li><a href="checkout.html">checkout</a></li>
+                                                <li><a href="team.html">team</a></li>
+                                                <li><a href="login-register.html">login & register</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- End MAinmenu Ares -->
+                        <div class="col-md-2 col-sm-4 col-xs-3">
+                            <ul class="menu-extra">
+                                <li>
+                                    <a class="link_head_client search search__open hidden-xs ti-search">Поиск</a>
+                                </li>
+                                {% if current_user.is_anonymous %}
+                                <li>
+                                    <a class="link_head_client ti-user" href="{{ url_for('auth.login') }}">Войти</a>
+                                </li>
+                                {% else %}
+                                <div class="col-md-8 col-lg-8 col-sm-6 col-xs-6">
+                                    <nav class="mainmenu__nav hidden-xs hidden-sm">
+                                        <ul class="main__menu">
+                                            <li class="drop">
+                                                <div><a class="link_head_client ti-user" href="#">профиль</a></div>
+                                                <ul style="margin: 4px -66px;" class="dropdown">
+                                                    <li class="li-profile"><a href="../about.html">Заказы</a></li>
+                                                    <li class="li-profile"><a href="{{ url_for('shopping.wishlist') }}">Избранное</a></li>
+                                                    <li class="li-profile"><a href="../catalog/shop-sidebar.html">Обратная связь</a></li>
+                                                    <li class="li-profile"><a href="../catalog/product-details-sticky-right.html">Настройки профиля</a></li>
+                                                    <li class="li-profile"><a href="{{ url_for('auth.logout') }}">Выйти</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                {% endif %}
+                                <li class="cart__menu">
+                                    <a class="link_head_client ti-user ti-shopping-cart" href="{{url_for('shopping.cart')}}">Корзина<div id="basket" class="cart_count"></div></a>
+                                </li>
+                                <li class="toggle__menu hidden-xs hidden-sm"><span class="ti-menu"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area"></div>
+                </div>
+            </div>
+            <!-- End Mainmenu Area -->
+        </header>
+        <!-- End Header Style -->
+        <div class="body__overlay"></div>
+        <!-- Start Offset Wrapper -->
+        <div class="offset__wrapper">
+            <!-- Start Search Popap -->
+            <div class="search__area">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-12" >
+                            <div class="search__inner">
+                                <form action="#" method="get">
+                                    <input placeholder="Search here... " type="text">
+                                    <button type="submit"></button>
+                                </form>
+                                <div class="search__close__btn">
+                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Popap -->
+            <!-- Start Offset MEnu -->
+            <div class="offsetmenu">
+                <div class="offsetmenu__inner">
+                    <div class="offsetmenu__close__btn">
+                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                    </div>
+                    <div class="off__contact">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="{{ url_for ('static', filename='images/logo/logo.png') }}" alt="logo">
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetu adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <ul class="sidebar__thumd">
+                        <li><a href="#"><img src="{{ url_for ('static', filename='images/sidebar-img/1.jpg') }}" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="{{ url_for ('static', filename='images/sidebar-img/2.jpg') }}" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="{{ url_for ('static', filename='images/sidebar-img/3.jpg') }}" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="{{ url_for ('static', filename='images/sidebar-img/4.jpg') }}" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="{{ url_for ('static', filename='images/sidebar-img/5.jpg') }}" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="{{ url_for ('static', filename='images/sidebar-img/6.jpg') }}" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="{{ url_for ('static', filename='images/sidebar-img/7.jpg') }}" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="{{ url_for ('static', filename='images/sidebar-img/8.jpg') }}" alt="sidebar images"></a></li>
+                    </ul>
+                    <div class="offset__widget">
+                        <div class="offset__single">
+                            <h4 class="offset__title">Language</h4>
+                            <ul>
+                                <li><a href="#"> Engish </a></li>
+                                <li><a href="#"> French </a></li>
+                                <li><a href="#"> German </a></li>
+                            </ul>
+                        </div>
+                        <div class="offset__single">
+                            <h4 class="offset__title">Currencies</h4>
+                            <ul>
+                                <li><a href="#"> USD : Dollar </a></li>
+                                <li><a href="#"> EUR : Euro </a></li>
+                                <li><a href="#"> POU : Pound </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offset__sosial__share">
+                        <h4 class="offset__title">Follow Us On Social</h4>
+                        <ul class="off__soaial__link">
+                            <li><a class="bg--twitter" href="#"  title="Twitter"><i class="zmdi zmdi-twitter"></i></a></li>
+
+                            <li><a class="bg--instagram" href="#" title="Instagram"><i class="zmdi zmdi-instagram"></i></a></li>
+
+                            <li><a class="bg--facebook" href="#" title="Facebook"><i class="zmdi zmdi-facebook"></i></a></li>
+
+                            <li><a class="bg--googleplus" href="#" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a></li>
+
+                            <li><a class="bg--google" href="#" title="Google"><i class="zmdi zmdi-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Offset MEnu -->
+            <!-- Start Cart Panel -->
+            <div class="shopping__cart">
+                <div class="shopping__cart__inner">
+                    <div class="offsetmenu__close__btn">
+                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                    </div>
+                    <div class="shp__cart__wrap">
+                    {% if clothes_cart %}
+                        {% if current_user.is_authenticated %}
+                            {% for i in clothes_cart %}
+                            <div class="shp__single__product">
+                                <div class="shp__pro__thumb">
+                                    <a href="#">
+                                        <img src="/static/{{i[1].split(sep='\n', maxsplit=-1)[0]}}/" alt="product images">
+                                    </a>
+                                </div>
+                                <div class="shp__pro__details">
+                                    <h2><a href="product-details.html">{{ i[0].name }}</a></h2>
+                                    <span class="quantity">QTY: {{ i[0].count }}</span>
+                                    <span class="quantity">Size: {{ i[0].size }}</span>
+                                    {% if i[0].old_price %}
+                                    <span class="old__price__cart">{{ i[0].old_price }} ₽</span>
+                                    <span class="shp__price">{{ i[0].current_price }} ₽</span>
+                                    {% else %}
+                                    <span class="shp__price">{{ i[0].current_price }} ₽</span>
+                                    {% endif %}
+                                </div>
+                                <div class="remove__btn">
+                                    <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            {% for i in clothes_cart %}
+                            <div class="shp__single__product">
+                                <div class="shp__pro__thumb">
+                                    <a href="#">
+                                        <img src="/static/{{i[0]['picture_product'].split(sep='\n', maxsplit=-1)[0]}}/" alt="product images">
+                                    </a>
+                                </div>
+                                <div class="shp__pro__details">
+                                    <h2><a href="product-details.html">{{ i[0].name }}</a></h2>
+                                    <span class="quantity">QTY: {{ i[2].count }}</span>
+                                    <span class="quantity">Size: {{ i[2]['size'] }}</span>
+                                    {% if i['old_price'] %}
+                                    <span class="old__price__cart">{{ i[1]['old_price'] }} ₽</span>
+                                    <span class="shp__price">{{ i[1]['current_price'] }} ₽</span>
+                                    {% else %}
+                                    <span class="shp__price">{{ i[1]['current_price'] }} ₽</span>
+                                    {% endif %}
+                                </div>
+                                <div class="remove__btn">
+                                    <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <ul class="shoping__total">
+                        <li class="subtotal">Subtotal:</li>
+                        <li class="total__price">{{ sum_cart }}₽</li>
+                    </ul>
+                    <ul class="shopping__btn">
+                        <li><a href="{{ url_for('shopping.cart') }}">View Cart</a></li>
+                        <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                        <li class="shp__checkout"><a href="{{ url_for ('catalog.delete') }}">очистить корзину</a></li>
+                    </ul>
+                    {% else %}
+                    <ul class="shopping__btn">
+                        <li><span class="empty_basket" href="{{ url_for('shopping.cart') }}">Ваша корзина пуста</span></li>
+                        <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+            <!-- End Cart Panel -->
+        </div>
+        <!-- End Offset Wrapper -->
+        <!-- Start Bradcaump area -->
+        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(../../static/images/bg/2.jpg) no-repeat scroll center center / cover ;">
+            <div class="ht__bradcaump__wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="bradcaump__inner text-center">
+                                <h2 class="bradcaump-title">Product Details sticky</h2>
+                                <nav class="bradcaump-inner">
+                                  <a class="breadcrumb-item" href="../main/index.html">Home</a>
+                                  <span class="brd-separetor">/</span>
+                                  <span class="breadcrumb-item active">sticky right</span>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Bradcaump area -->
+        <!-- Start Product Details -->
+        <section class="htc__product__details pt--100 pb--100 bg__white">
+            <div class="container">
+                <div class="scroll-active">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-7 col-sm-5 col-xs-12">
+                            <div class="product__details__container product-details-5">
+                                <div class="scroll-single-product mb--30">
+                                    <img src="/static/{{card[0][0].picture_product.split(sep='\n', maxsplit=-1)[0]}}/" alt="full-image">
+                                </div>
+                                <div class="scroll-single-product mb--30">
+                                    <img src="/static/{{card[0][0].picture_product.split(sep='\n', maxsplit=-1)[1]}}/" alt="full-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-active col-md-5 col-lg-5 col-sm-7 col-xs-12 xmt-30">
+                            <div class="htc__product__details__inner ">
+                                <div class="pro__detl__title">
+                                    <h2>{{ card[0][0].name }}</h2>
+                                </div>
+                                <div class="pro__dtl__rating">
+                                    <div class="rating-result" style="display: contents">
+                                        {% for i in range(rating_estimation_avg) %}
+                                            <span class="active"></span>
+                                        {% endfor %}
+                                        {% for i in range(5 - rating_estimation_avg) %}
+                                            <span></span>
+                                        {% endfor %}
+                                    </div>
+                                    <span class="rat__qun">(На основе {{ rating_count }} оценок)</span>
+                                </div>
+                                <div class="pro__details">
+                                    <p>{{ card[0][0].description }}</p>
+                                </div>
+                                <ul class="pro__dtl__prize">
+                                    {% if card[0][1].old_price %}
+                                        <li class="old__prize">{{ card[0][1].old_price }}₽</li>
+                                        <li class="new__price">{{ card[0][1].current_price }}₽</li>
+                                    {% else %}
+                                        <li class="new__price">{{ card[0][1].current_price }}₽</li>
+                                    {% endif %}
+                                </ul>
+<!--                                <div class="pro__dtl__color">-->
+<!--                                    <h2 class="title__5">Choose Colour</h2>-->
+<!--                                    <ul class="pro__choose__color">-->
+<!--                                        <li class="red"><a href="#"><i class="zmdi zmdi-circle"></i></a></li>-->
+<!--                                        <li class="blue"><a href="#"><i class="zmdi zmdi-circle"></i></a></li>-->
+<!--                                        <li class="perpal"><a href="#"><i class="zmdi zmdi-circle"></i></a></li>-->
+<!--                                        <li class="yellow"><a href="#"><i class="zmdi zmdi-circle"></i></a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+                                <div class="pro__dtl__size">
+                                <form id='size' method="POST" action="#">
+                                    <h2 class="title__5">Size</h2>
+                                    <ul class="pro__choose__size">
+                                            <div class="form_radio_group">
+                                        {% for i in card[1] %}
+                                        {% if i.count != 0 %}
+                                                <div class="form_radio_group-item">
+                                                    <input id="{{ i.size }}" type="radio" name="selctsize" value="{{ i.size }}" autocomplete="off">
+                                                    <label for="{{ i.size }}">{{ i.size }}</label>
+                                                </div>
+                                        {% else %}
+                                                <div class="form_radio_group-item">
+                                                    <input id="{{ i.size }}" type="radio" name="selctsize" value="{{ i.size }}" disabled>
+                                                    <label for="{{ i.size }}">{{ i.size }}</label>
+                                                </div>
+                                        {% endif %}
+                                        {% endfor %}
+                                            </div>
+                                    </ul>
+                                <ul class="pro__dtl__btn">
+                                    <li class="buy__now__btn"><button id="put_basket" class="buy" name="buy" formaction="javascript:add_cart('{{ card[0][0].product_article }}', (form.elements['selctsize'].value));">Добавить в корзину</button></li>
+                                    {% if current_user.is_authenticated %}
+                                    <li style="margin-left: 30px"><button id="put_wishlist" formaction="javascript:add_wishlist('{{ card[0][0].product_article }}', (form.elements['selctsize'].value));"><span class="ti-heart"></span></button></li>
+                                    {% else %}
+                                    <li style="margin-left: 30px"><button id="put_wishlist" formaction='{{ url_for("auth.login") }}'><span class="ti-heart"></span></button></li>
+                                    {% endif %}
+                                    <li><button id="report_receipt" formaction="#"><span class="ti-email"></span></button></li>
+                                </ul>
+                                </form>
+                                </div>
+                                <div class="pro__social__share">
+                                    <h2>Share :</h2>
+                                    <ul class="pro__soaial__link">
+                                        <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Product Details -->
+        <!-- Start Product tab -->
+        <section class="htc__product__details__tab bg__white pb--120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <ul class="product__deatils__tab mb--60" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#description" role="tab" data-toggle="tab">Description</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#sheet" role="tab" data-toggle="tab">Data sheet</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#reviews" role="tab" data-toggle="tab">Reviews</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product__details__tab__content">
+                            <!-- Start Single Content -->
+                            <div role="tabpanel" id="description" class="product__tab__content fade in active">
+                                <div class="product__description__wrap">
+                                    <div class="product__desc">
+                                        <h2 class="title__6">Details</h2>
+                                        <p>{{ card[0][0].description }}</p>
+                                    </div>
+                                    <div class="pro__feature">
+                                        <h2 class="title__6">Features</h2>
+                                        <ul class="feature__list ">
+                                            <li><span class="color_copmposition_label">Производитель:</span><span> {{ card[0][0].brand }} </span></li>
+                                            <li><span class="color_copmposition_label">Артикул товара:</span><span> {{ card[0][0].product_article }} </span></li>
+                                            <li><span class="color_copmposition_label">Цвет:</span><span> {{ card[0][0].color }} </span></li>
+                                            <li><span class="color_copmposition_label">Сезон:</span><span> {{ card[0][0].season }} </span></li>
+                                            <li><span class="color_copmposition_label">Состав:</span><span> {{ card[0][0].composition }} </span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Content -->
+                            <!-- Start Single Content -->
+                            <div role="tabpanel" id="sheet" class="product__tab__content fade">
+                                <div class="pro__feature">
+                                        <h2 class="title__6">Data sheet</h2>
+                                        <ul class="feature__list">
+                                            <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in reprehenderit in voluptate velit esse</a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in reprehenderit in voluptate velit esse</a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor incididunt ut labore et </a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor incididunt ut labore et </a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea commodo consequat.</a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea commodo consequat.</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <!-- End Single Content -->
+                            <!-- Start Single Content -->
+                            <div role="tabpanel" id="reviews" class="product__tab__content fade">
+                                {% if review %}
+                                <div>
+                                    <span>Сортировать по цене:</span>
+                                    <p class="button">
+                                      <input name='check' type="checkbox" id="sort_data" value="date" onclick="onlyOne(this)">
+                                      <label for="sort_data" class="arrows">Дате</label>
+                                    </p>
+                                    <p class="button">
+                                      <input name='check' type="checkbox" id="sort_rating" value="rating" onclick="onlyOne(this)">
+                                      <label for="sort_rating" class="arrows">Оценке</label>
+                                    </p>
+                                    <p class="button">
+                                      <input name='check' type="checkbox" id="sort_useful" value="useful" onclick="onlyOne(this)">
+                                      <label for="sort_useful" class="arrows">Полезности</label>
+                                    </p>
+                                    <p class="button1">
+                                        <label for="sort_photo_in_stock" title="По фото">С фото</label>
+                                        <input class="checkbox_level" type="checkbox" id="sort_photo_in_stock" value="photo_stock">
+                                    </p>
+                                    {% if current_user.is_authenticated %}
+                                        <a href="javascript:PopUpShow()" class="button_review button-blue">Написать отзыв</a>
+                                    {% else %}
+                                        <a class="button_review button-blue" href="{{ url_for('auth.login') }}">Написать отзыв</a>
+                                    {% endif %}
+                                </div>
+                                {% else %}
+                                <div class="button_review_none">
+                                    <div>
+                                        <p class="review_none_title">Отзывов пока нет, но ваш может стать первым</p>
+                                        <p>Поделитесь мнением о покупке и помогите другим покупателям сделать выбор</p>
+                                        {% if current_user.is_authenticated %}
+                                            <a href="javascript:PopUpShow()" class="button_review button-blue">Написать отзыв</a>
+                                        {% else %}
+                                            <a class="button_review button-blue" href="{{ url_for('auth.login') }}">Написать отзыв</a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if review != [] %}
+                                <div id="sorting" class="review__address__inner">
+                                    <!-- Start Single Review -->
+                                    {% for count, sing_review in enumerate(review) %}
+                                    <div class="pro__review">
+                                        <div class="review__thumb">
+                                            <img src="images/review/1.jpg" alt="user profile images">
+                                        </div>
+                                        <div class="review__details" style="width:720px; height: 250px; margin: 15px 0">
+                                            <div style="margin-left: 5px;">
+                                                <h4 style="display: inline-block"><a href="#">{{ sing_review[0].username }}</a></h4>
+                                                <span style="color: grey">{{ sing_review[1].time_create }}</span>
+                                            </div>
+                                            <div class="review__info">
+                                                <div class="rating-result" style="display: contents">
+                                                    {% for i in range(sing_review[1].rating) %}
+                                                        <span class="active"></span>
+                                                    {% endfor %}
+                                                    {% for i in range(5 - sing_review[1].rating) %}
+                                                        <span></span>
+                                                    {% endfor %}
+                                                </div>
+                                                <p class="review_size_color_text"><span class="text_review">Цвет : </span><span>{{ sing_review[3] }}</span></p>
+                                                <p class="review_size_color_text"><span class="text_review">Размер : </span><span>{{ sing_review[1].size_product }} {{ sing_review[1].size_matching }}</span></p>
+                                            </div>
+                                                <p style="margin-left: 5px;">{{ sing_review[1].review }}<span></span></p>
+                                            <div style="margin: 10px 0">
+                                                {% if sing_review[2]['path_picture'] %}
+                                                <img style="height: 128px; width: 96px; border-radius: 6px; margin-left: 5px;" src="/static/{{sing_review[2]['path_picture'].split(sep='\n', maxsplit=-1)[0]}}/" alt="product images">
+                                                {% else %}
+                                                {% endif %}
+                                            </div>
+                                            <div>
+                                                {% if sing_review[4] != None and  sing_review[5] != None %}
+                                                    {% if sing_review[6] == True %}
+                                                        <a class="dislike_like_put"  href="javascript:like('like', '{{ sing_review[1].id }}')"><img style="padding-bottom: 6px" id='like_color{{ sing_review[1].id }}' src="{{url_for('static', filename='images/review/like-color.png')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_like{{ sing_review[1].id }}">{{ sing_review[4] }}</span></a>
+                                                        <a class="dislike_like_put"  href="javascript:dislike('dislike', '{{ sing_review[1].id }}')"><img id='dislike_color{{ sing_review[1].id }}' style="transform:rotate(180deg); padding-top: 6px" src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_dislike{{ sing_review[1].id }}">{{ sing_review[5] }}</span></a>
+                                                    {% elif  sing_review[7] == True  %}
+                                                        <a class="dislike_like_put"  href="javascript:like('like', '{{ sing_review[1].id }}')"><img style="padding-bottom: 6px" id='like_color{{ sing_review[1].id }}' src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_like{{ sing_review[1].id }}">{{ sing_review[4] }}</span></a>
+                                                        <a class="dislike_like_put"  href="javascript:dislike('dislike', '{{ sing_review[1].id }}')"><img id='dislike_color{{ sing_review[1].id }}' style="transform:rotate(180deg); padding-top: 6px" src="{{url_for('static', filename='images/review/like-color.png')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_dislike{{ sing_review[1].id }}">{{ sing_review[5] }}</span></a>
+                                                    {% else %}
+                                                        <a class="dislike_like_put"  href="javascript:like('like', '{{ sing_review[1].id }}')"><img style="padding-bottom: 6px" id='like_color{{ sing_review[1].id }}' src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_like{{ sing_review[1].id }}">{{ sing_review[4] }}</span></a>
+                                                        <a class="dislike_like_put"  href="javascript:dislike('dislike', '{{ sing_review[1].id }}')"><img id='dislike_color{{ sing_review[1].id }}' style="transform:rotate(180deg); padding-top: 6px" src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_dislike{{ sing_review[1].id }}">{{ sing_review[5] }}</span></a>
+                                                    {% endif %}
+                                                {% else %}
+                                                    <a class="dislike_like_put"  href="javascript:like('like', '{{ sing_review[1].id }}')"><img style="padding-bottom: 6px" id='like_color{{ sing_review[1].id }}' src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_like{{ sing_review[1].id }}">0</span></a>
+                                                    <a class="dislike_like_put"  href="javascript:dislike('dislike', '{{ sing_review[1].id }}')"><img id='dislike_color{{ sing_review[1].id }}' style="transform:rotate(180deg); padding-top: 6px" src="{{url_for('static', filename='images/review/like.svg')}}" title="dsfds"><span style="padding: 0 10px; font-size: 18px;" id="count_dislike{{ sing_review[1].id }}">0</span></a>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                    <div style="display: flex; justify-content: center;">
+                                        <a href="{{ url_for('shopping.review_all', article=card[0][0].product_article) }}" class="button_review_all button-blue">Перейти ко все отзывам</a>
+                                    </div>
+                                {% endif %}
+                                </div>
+                                <div>
+                                        {% if checking_review == 0 %}
+                                            <div class="b-popup-content" id="popup1">
+                                                   <div class="popup_review">
+                                                   <div class="position_review">
+                                                        <span class="title__6">Отзыв к товару «{{ card[0][0].brand }} / {{ card[0][0].name }}»</span>
+                                                        <img src="/static/{{card[0][0].picture_product.split(sep='\n', maxsplit=-1)[0]}}/" width="48" height="64" alt="full-image">
+                                                   </div>
+                                                    <form action='' id="review-form" method="post" name="review_message" enctype="multipart/form-data" >
+                                                        {{ form_message.hidden_tag() }}
+                                                        <div class="single-review-form">
+                                                            <div class="review-box-mobile name">
+                                                                <div class="position_review">
+                                                                    <p class="padding-input font_popup_review">Оцените товар</p>
+                                                                    <div class="rating-area">
+
+                                                                        <input type="radio" id="star-5" name="rating" value="5" onclick="check();">
+                                                                        <label for="star-5" title="Оценка «5»"></label>
+                                                                        <input type="radio" id="star-4" name="rating" value="4" onclick="check();">
+                                                                        <label for="star-4" title="Оценка «4»"></label>
+                                                                        <input type="radio" id="star-3" name="rating" value="3" onclick="check();">
+                                                                        <label for="star-3" title="Оценка «3»"></label>
+                                                                        <input type="radio" id="star-2" name="rating" value="2" onclick="check();">
+                                                                        <label for="star-2" title="Оценка «2»"></label>
+                                                                        <input type="radio" id="star-1" name="rating" value="1" onclick="check();">
+                                                                        <label for="star-1" title="Оценка «1»"></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="position_review_list">
+                                                                    <p class="font_popup_review">Размер</p>
+                                                                    <p class="padding-input">
+
+                                                                        <select required class="drop_btn_size" name="list_size_number" place>
+                                                                      <option value="" disabled selected>Выберите из списка</option>
+                                                                      <option>46</option>
+                                                                      <option>48</option>
+                                                                      <option>50</option>
+                                                                      <option>52</option>
+                                                                      <option>54</option>
+                                                                     </select></p>
+                                                                </div>
+                                                                <div class="position_review_list">
+                                                                    <p class="font_popup_review">Соответствие размеру</p>
+                                                                    <p class="padding-input">
+                                                                        <select required class="drop_btn_size" name="list_size_matching" place>
+                                                                      <option value="" disabled selected>Выберите из списка</option>
+                                                                      <option>Большемерит</option>
+                                                                      <option>Соответствует размеру</option>
+                                                                      <option>Маломерит</option>
+                                                                     </select></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-review-form">
+                                                            <div class="review-box message">
+                                                                 <div>
+                                                                     <div class="container_review">
+                                                                        <p class="font_messages_review">Расскажите о товаре</p>
+                                                                        <div class="counter_review">
+                                                                            <span class="current">0</span>&nbsp;/
+                                                                            <span class="total">1000</span>
+                                                                        </div>
+                                                                     </div>
+                                                                     <textarea name='message', placeholder="Напишите отзыв"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-review-form">
+                                                            <p>Загрузите до 5 фотографийе</p>
+                                                            <div class="box_img">
+                                                                <div style="display:flex;"><input class="input__file" type="file" id="file" name="file" multiple accept=".jpg, .jpeg, .png, .bmp, .gif">
+                                                                    <ul style="display: flex" id="list"></ul>
+                                                                    <label class="download_icon" for="file" src="{{ url_for ('static', filename='images/product-details/popup/download.svg') }}" >
+                                                                        <img class="img_download" src="{{ url_for ('static', filename='images/product-details/popup/download.svg') }}" alt="download_images">
+                                                                    </label>
+                                                                </div>
+                                                                <div>
+                                                                    <p style="margin-bottom: 0">Нажмите на область с иконкой</p>
+                                                                    <p class="size_restriction">Фото до 10 МБ. Формат JPG, JPEG, PNG, BMP, GIF</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-btn">
+                                                            <p class="size_restriction">Размещая отзыв на сайте, Вы даёте согласие на использование отзыва на сторонних ресурсах</p>
+                                                            <input type="button" class="fv-btn" title="Закрыть" onClick="window.location='javascript:PopUpHide()'" value="Отменить">
+                                                            <input type="submit" name="submit_review" class="fv-btn" value="Отправить" disabled=""/>
+                                                        </div>
+                                                    </form>
+                                                    <a class="close_review" title="Закрыть" href="javascript:PopUpHide()"></a>
+                                               </div>
+                                            </div>
+                                        {% elif checking_review > 0 %}
+                                            <div class="b-popup-content" id="popup1">
+                                                <div class="popup_review">
+                                                    <p style="display: flex; justify-content: center; font-size: 29px;">Вы уже писали отзыв к данному товару </p>
+                                                    <a class="close_review" title="Закрыть" href="javascript:PopUpHide()"></a>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    <!-- End Single Review -->
+                                </div>
+                                <!-- Start RAting Area -->
+                            </div>
+                            <!-- End Single Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Product tab -->
+        <!-- Start Footer Area -->
+        <footer class="htc__foooter__area gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__container clearfix">
+                         <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-3 col-sm-6">
+                            <div class="ft__widget">
+                                <div class="ft__logo">
+                                    <a href="../main/index.html">
+                                        <img src="images/logo/logo.png" alt="footer logo">
+                                    </a>
+                                </div>
+                                <div class="footer-address">
+                                    <ul>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-pin"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <p>194 Main Rd T, FS Rayed <br> VIC 3057, USA</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-email"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <a href="#"> info@example.com</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-phone-in-talk"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <p>+012 345 678 102 </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="social__icon">
+                                    <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-2 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Categories</h2>
+                                <ul class="footer-categories">
+                                    <li><a href="shop-sidebar.html">Men</a></li>
+                                    <li><a href="shop-sidebar.html">Women</a></li>
+                                    <li><a href="shop-sidebar.html">Accessories</a></li>
+                                    <li><a href="shop-sidebar.html">Shoes</a></li>
+                                    <li><a href="shop-sidebar.html">Dress</a></li>
+                                    <li><a href="shop-sidebar.html">Denim</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-2 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Infomation</h2>
+                                <ul class="footer-categories">
+                                    <li><a href="../about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Returns & Exchanges</a></li>
+                                    <li><a href="#">Shipping & Delivery</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-3 col-lg-offset-1 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Newsletter</h2>
+                                <div class="newsletter__form">
+                                    <p>Subscribe to our newsletter and get 10% off your first purchase .</p>
+                                    <div class="input__box">
+                                        <div id="mc_embed_signup">
+                                            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                                <div id="mc_embed_signup_scroll" class="htc__news__inner">
+                                                    <div class="news__input">
+                                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+                                                    </div>
+                                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                                                    <div class="clearfix subscribe__btn"><input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="bst__btn btn--white__color">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                    </div>
+                </div>
+                <!-- Start Copyright Area -->
+                <div class="htc__copyright__area">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <div class="copyright__inner">
+                                <div class="copyright">
+                                    <p>© 2017 <a href="#">your website name</a>
+                                    All Right Reserved.</p>
+                                </div>
+                                <ul class="footer__menu">
+                                    <li><a href="../main/index.html">Home</a></li>
+                                    <li><a href="shop.html">Product</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Copyright Area -->
+            </div>
+        </footer>
+        <!-- End Footer Area -->
+    </div>
+    <!-- Body catalog wrapper end -->
+    <!-- QUICKVIEW PRODUCT -->
+    <div id="quickview-wrapper">
+        <!-- Modal -->
+        <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal__container" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-product">
+                            <!-- Start product images -->
+                            <div class="product-images">
+                                <div class="main-image images">
+                                    <img alt="big images" src="images/product/big-img/1.jpg">
+                                </div>
+                            </div>
+                            <!-- end product images -->
+                            <div class="product-info">
+                                <h1>Simple Fabric Bags</h1>
+                                <div class="rating__and__review">
+                                    <ul class="rating">
+                                        <li><span class="ti-star"></span></li>
+                                        <li><span class="ti-star"></span></li>
+                                        <li><span class="ti-star"></span></li>
+                                        <li><span class="ti-star"></span></li>
+                                        <li><span class="ti-star"></span></li>
+                                    </ul>
+                                    <div class="review">
+                                        <a href="#">4 customer reviews</a>
+                                    </div>
+                                </div>
+                                <div class="price-box-3">
+                                    <div class="s-price-box">
+                                        <span class="new-price">$17.20</span>
+                                        <span class="old-price">$45.00</span>
+                                    </div>
+                                </div>
+                                <div class="quick-desc">
+                                    Designed for simplicity and made from high quality materials. Its sleek geometry and material combinations creates a modern look.
+                                </div>
+                                <div class="select__color">
+                                    <h2>Select color</h2>
+                                    <ul class="color__list">
+                                        <li class="red"><a title="Red" href="#">Red</a></li>
+                                        <li class="gold"><a title="Gold" href="#">Gold</a></li>
+                                        <li class="orange"><a title="Orange" href="#">Orange</a></li>
+                                        <li class="orange"><a title="Orange" href="#">Orange</a></li>
+                                    </ul>
+                                </div>
+                                <div class="select__size">
+                                    <h2>Select size</h2>
+                                    <ul class="color__list">
+                                        <li class="l__size"><a title="L" href="#">L</a></li>
+                                        <li class="m__size"><a title="M" href="#">M</a></li>
+                                        <li class="s__size"><a title="S" href="#">S</a></li>
+                                        <li class="xl__size"><a title="XL" href="#">XL</a></li>
+                                        <li class="xxl__size"><a title="XXL" href="#">XXL</a></li>
+                                    </ul>
+                                </div>
+                                <div class="social-sharing">
+                                    <div class="widget widget_socialsharing_widget">
+                                        <h3 class="widget-title-modal">Share this product</h3>
+                                        <ul class="social-icons">
+                                            <li><a target="_blank" title="rss" href="#" class="rss social-icon"><i class="zmdi zmdi-rss"></i></a></li>
+                                            <li><a target="_blank" title="Linkedin" href="#" class="linkedin social-icon"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                            <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i class="zmdi zmdi-pinterest"></i></a></li>
+                                            <li><a target="_blank" title="Tumblr" href="#" class="tumblr social-icon"><i class="zmdi zmdi-tumblr"></i></a></li>
+                                            <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i class="zmdi zmdi-pinterest"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="addtocart-btn">
+                                    <a href="#">Add to cart</a>
+                                </div>
+                            </div><!-- .product-info -->
+                        </div><!-- .modal-product -->
+                    </div><!-- .modal-body -->
+                </div><!-- .modal-content -->
+            </div><!-- .modal-dialog -->
+        </div>
+        <!-- END Modal -->
+    </div>
+    <!-- END QUICKVIEW PRODUCT -->
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <script>
+        function add_cart(product_article, size_clothes) {
+            if ($('input[name="selctsize"]').is(':checked')){
+                $.post("{{ url_for('shopping.put_cart')}}", {
+                    article: product_article,
+                    size: size_clothes
+                }).done(function(data) {
+                    $('#basket').html(data);
+                    $('#put_basket').attr('formaction', "{{ url_for ('shopping.cart') }}").html('Перейти в корзину');
+                }).fail(function() {
+                    alert('Error: Could not contact server.');
+                });
+            }else {
+            $('.form_radio_group').addClass("color-selctsize");
+        }
+    }
+
+
+                var success = function(){
+           window.open("#win1");
+        }
+
+        function radio_color_remove() {
+                $('.form_radio_group').removeClass("color-selctsize");
+        }
+        setInterval(radio_color_remove, 2000);
+
+        function add_wishlist(product_article, size_clothes) {
+            if ($('input[name="selctsize"]').is(':checked')) {
+                $.post("{{ url_for('shopping.put_wishlist')}}", {
+                    article: product_article,
+                    size: size_clothes
+                }).done(function() {
+
+                }).fail(function() {
+                    alert('Error: Could not contact server.');
+                });
+            }else {
+            $('.form_radio_group').addClass("color-selctsize");
+        }
+    }
+
+
+
+
+        const form = document.getElementById("size");
+        /* оступ у цифр */
+        Array.from(document.getElementsByClassName('old__prize'), e => e.textContent = e.textContent.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+        Array.from(document.getElementsByClassName('new__price'), e => e.textContent = e.textContent.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+    </script>
+    <script>
+        const checkbox = document.getElementById("size");
+        const btn_submit = document.getElementById("buy");
+
+        // checkbox.addEventListener("change", () => {
+        //     if (checkbox.checked) {
+        //         btn_submit.removeAttribute("disabled");
+        //     } else {
+        //         btn_submit.setAttribute("disabled", true);
+        //     }
+        // });
+    </script>
+    <script>
+    /* отображение количества товара в корзине*/
+        {
+            $.post("{{ url_for('shopping.cart_visible')}}", {
+            }).done(function(data) {
+                $('#basket').append(data)
+            }).fail(function() {
+                alert('Error: Could not contact server.');
+            });
+        }
+
+    /*  для постановки оценки в отзыве*/
+        function check() {
+            var submit = document.getElementsByName('submit_review')[0];
+            if (document.getElementById('star-5').checked ||
+                document.getElementById('star-4').checked ||
+                document.getElementById('star-3').checked ||
+                document.getElementById('star-2').checked ||
+                document.getElementById('star-1').checked)
+            submit.disabled = '';
+            else
+            submit.disabled = 'disabled';
+            }
+
+    /* счетчик символов в описание отзыва*/
+        const textarea = document.querySelector('textarea');
+        const counter = document.querySelector('.current');
+        const maxlength = 1000;
+
+        textarea.addEventListener('input', onInput)
+
+        function onInput(event) {
+          event.target.value = event.target.value.substr(0, maxlength); // обрезаем текст до 1000 символов
+          const length = event.target.value.length;
+          counter.textContent = length;
+        }
+
+    /* отображение прикрепленных файлов в отзыве */
+        function showFile(e) {
+            var files = e.target.files;
+            for (var i = 0, f; f = files[i]; i++) {
+              if (!f.type.match('image.*')) continue;
+              var fr = new FileReader();
+              fr.onload = (function(theFile) {
+                return function(e) {
+                  var li = document.createElement('li');
+                  li.innerHTML = "<img class='img_download_file', src='" + e.target.result + "' />";
+                  document.getElementById('list').insertBefore(li, null);
+                };
+              })(f);
+
+              fr.readAsDataURL(f);
+            }
+          }
+
+          document.getElementById('file').addEventListener('change', showFile, false);
+
+
+
+
+    /* включение кнопки покупки при выборе размера*/
+
+
+
+
+
+        $(document.getElementsByName('selctsize')).change(function () {$("#report_receipt").prop("disabled", false);});
+        let isChecked2 = false;
+        document.querySelector('#report_receipt').disabled = !isChecked2;
+
+    </script>
+    <script>
+        /* сортировка озывов */
+
+        $('#sort_data').change(function()  {
+            $.post( "{{ url_for('shopping.sort_review')}}", {
+                direction: $(this).prop('checked'),
+                sort_type: $('#sort_data').val(),
+                current_article: '{{ article }}'
+             }).done(function(data) {
+                    $('#sorting').html(data)
+             }).fail(function () {
+                alert('Error: Could not contact server.');
+            });
+        })
+
+
+
+         $('#sort_rating').change(function()  {
+            $.post("{{ url_for('shopping.sort_review')}}", {
+                direction: $(this).prop('checked'),
+                sort_type:  $('#sort_rating').val(),
+                current_article: '{{ article }}'
+             }).done(function(data) {
+                    $('#sorting').html(data)
+             }).fail(function () {
+                alert('Error: Could not contact server.');
+            });
+        })
+
+         $('#sort_useful').change(function()  {
+            $.post("{{ url_for('shopping.sort_review')}}", {
+                direction: $(this).prop('checked'),
+                sort_type:  $('#sort_useful').val(),
+                current_article: '{{ article }}'
+             }).done(function(data) {
+                    $('#sorting').html(data)
+             }).fail(function () {
+                alert('Error: Could not contact server.');
+            });
+        })
+
+        $('#sort_photo_in_stock').change(function()  {
+            $.post("{{ url_for('shopping.sort_review')}}", {
+                direction: $(this).prop('checked'),
+                sort_type:  $('#sort_photo_in_stock').val(),
+                current_article: '{{ article }}'
+             }).done(function(data) {
+                    $('#sorting').html(data)
+             }).fail(function () {
+                alert('Error: Could not contact server.');
+            });
+        })
+
+
+
+
+
+        function onlyOne(checkbox) {
+            var checkboxes = document.getElementsByName('check')
+            checkboxes.forEach((item) => {
+                if (item !== checkbox) item.checked = false
+            })
+        }
+    </script>
+    <script>
+        /* лайки и дизы */
+        function like(put, review) {
+                $.post("{{ url_for('shopping.like_and_dislike')}}", {
+                    put: put,
+                    target_review: review
+                }).done(function(data) {
+                    if (data != 'None') {
+                        $('#count_like' + review).html(data.split(sep=' ', maxsplit=-1)[1])
+                        $('#count_dislike' + review).html(data.split(sep=' ', maxsplit=-1)[0])
+                        $('#dislike_color' + review).attr('src', "{{url_for('static', filename='images/review/like.svg')}}");
+                        if (data.split(sep=' ', maxsplit=-1)[2] == 1)
+                        $('#like_color' + review).attr('src', "{{url_for('static', filename='images/review/like-color.png')}}");
+                        else if (data.split(sep=' ', maxsplit=-1)[2] == 0)
+                        $('#like_color' + review).attr('src', "{{url_for('static', filename='images/review/like.svg')}}");}
+                    else {
+                            location.href = "{{ url_for('auth.login')}}"
+                        }
+                }).fail(function() {
+                    alert('Error: Could not contact server.');
+                });
+            }
+
+    </script>
+    <script>
+        /* лайки и дизы */
+        function dislike(put, review) {
+                $.post("{{ url_for('shopping.like_and_dislike')}}", {
+                    put: put,
+                    target_review: review
+                }).done(function(data){
+                    if (data != 'None') {
+                        $('#count_like' + review).html(data.split(sep=' ', maxsplit=-1)[1])
+                        $('#count_dislike' + review).html(data.split(sep=' ', maxsplit=-1)[0])
+                        $('#like_color' + review).attr('src', "{{url_for('static', filename='images/review/like.svg')}}");
+                        if (data.split(sep=' ', maxsplit=-1)[2] == 1)
+                        $('#dislike_color' + review).attr('src', "{{url_for('static', filename='images/review/like-color.png')}}");
+                        else if (data.split(sep=' ', maxsplit=-1)[2] == 0)
+                        $('#dislike_color' + review).attr('src', "{{url_for('static', filename='images/review/like.svg')}}");}
+                    else {
+                            location.href = "{{ url_for('auth.login')}}"
+                        }
+                }).fail(function() {
+                    alert('Error: Could not contact server.');
+                });
+            }
+
+
+    </script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Скрыть PopUp при загрузке страницы
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow(){
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide(){
+            $("#popup1").hide();
+        }
+
+
+    </script>
+</body>
+
+</html>

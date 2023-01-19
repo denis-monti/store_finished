@@ -1,0 +1,52 @@
+<div class="shp__cart__wrap">
+{% if clothes_cart %}
+    {% if current_user.is_authenticated %}
+        {% for i in clothes_cart %}
+        <div class="shp__single__product">
+            <div class="shp__pro__thumb">
+                <a href="#">
+                    <img src="/static/{{i[1].split(sep='\n', maxsplit=-1)[0]}}/" alt="product images">
+                </a>
+            </div>
+            <div class="shp__pro__details">
+                <h2><a href="product-details.html">{{ i[0].name }}</a></h2>
+                <span class="quantity">QTY: {{ i[0].count }}</span>
+                <span class="quantity">Size: {{ i[0].size }}</span>
+                {% if i[0].old_price %}
+                <span class="old__price__cart">{{ i[0].old_price }} ₽</span>
+                <span class="shp__price">{{ i[0].current_price }} ₽</span>
+                {% else %}
+                <span class="shp__price">{{ i[0].current_price }} ₽</span>
+                {% endif %}
+            </div>
+            <div class="remove__btn">
+                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        {% for i in clothes_cart %}
+        <div class="shp__single__product">
+            <div class="shp__pro__thumb">
+                <a href="#">
+                    <img src="/static/{{i[0]['picture_product'].split(sep='\n', maxsplit=-1)[0]}}/" alt="product images">
+                </a>
+            </div>
+            <div class="shp__pro__details">
+                <h2><a href="product-details.html">{{ i[0].name }}</a></h2>
+                <span class="quantity">QTY: {{ i[2].count }}</span>
+                <span class="quantity">Size: {{ i[2]['size'] }}</span>
+                {% if i['old_price'] %}
+                <span class="old__price__cart">{{ i[1]['old_price'] }} ₽</span>
+                <span class="shp__price">{{ i[1]['current_price'] }} ₽</span>
+                {% else %}
+                <span class="shp__price">{{ i[1]['current_price'] }} ₽</span>
+                {% endif %}
+            </div>
+            <div class="remove__btn">
+                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+</div>

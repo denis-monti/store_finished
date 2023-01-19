@@ -1,0 +1,1079 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tmart-Minimalist eCommerce HTML5 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for ('static', filename='images/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url_for ('static', filename='apple-touch-icon.png') }}">
+    
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork catalog css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/bootstrap.min.css') }}">
+    <!-- Owl Carousel catalog css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/owl.theme.default.min.css') }}">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/core.css') }}">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/shortcode/shortcodes.css') }}">
+    <!-- Theme catalog style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style.css') }}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/responsive.css') }}">
+    <!-- User style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css') }}">
+
+
+    <!-- Modernizr JS -->
+    <script src="{{ url_for ('static', filename='js/vendor/modernizr-2.8.3.min.js') }}"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->  
+
+    <!-- Body catalog wrapper start -->
+    <div class="wrapper fixed__footer">
+        <!-- Start Header Style -->
+        <header id="header" class="htc-header header--3 bg__white">
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__area sticky__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+                            <div class="logo">
+                                <a href="{{ url_for ('main.index')}}">
+                                    <img src="{{ url_for ('static', filename='images/logo/logo.png') }}" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Start MAinmenu Ares -->
+                        <div class="col-md-8 col-lg-8 col-sm-6 col-xs-6">
+                            <nav class="mainmenu__nav hidden-xs hidden-sm">
+                                <ul class="main__menu">
+                                    <li class="drop"><a href="../main/index.html">Home</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../main/index.html">Home 1</a></li>
+                                            <li><a href="index-2.html">Home 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="portfolio-gutter-box-3.html">portfolio</a>
+                                        <ul class="dropdown">
+                                            <li><a href="portfolio-gutter-box-3.html">Boxed Gutter 3 Col</a></li>
+                                            <li><a href="portfolio-gutter-full-wide-4.html">Wide Gutter 4 Col </a></li>
+                                            <li><a href="portfolio-card-box-3.html">Card Gutter 3 Col </a></li>
+                                            <li><a href="portfolio-masonry-3.html">Masonry Box 3 Col </a></li>
+                                            <li><a href="portfolio-gutter-masonry-fullwide-4.html">Masonry Wide 4 Col </a></li>
+                                            <li><a href="portfolio-gutter-box-3-carousel.html">carousel Gutter 3 Col </a></li>
+                                            <li><a href="portfolio-justified-box-3.html">justified box 3 Col</a></li>
+                                            <li><a href="single-portfolio-gallery.html">Portfolio Details </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="blog.html">Blog</a>
+                                        <ul class="dropdown">
+                                            <li><a href="blog.html">blog 3 column</a></li>
+                                            <li><a href="blog-2-col-rightsidebar.html">2 col right siderbar</a></li>
+                                            <li><a href="blog-details-left-sidebar.html"> blog details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="shop.html">Shop</a>
+                                        <ul class="dropdown mega_dropdown">
+                                            <!-- Start Single Mega MEnu -->
+                                            <li><a class="mega__title" href="shop.html">shop layout</a>
+                                                <ul class="mega__item">
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Single Mega MEnu -->
+                                            <!-- Start Single Mega MEnu -->
+                                            <li><a class="mega__title" href="shop.html">product details layout</a>
+                                                <ul class="mega__item">
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                    <li><a href="#">demo page title</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Single Mega MEnu -->
+                                            <!-- Start Single Mega MEnu -->
+                                            <li>
+                                                <ul class="mega__item">
+                                                    <li>
+                                                        <div class="mega-item-img">
+                                                            <a href="shop.html">
+                                                                <img src="images/feature-img/3.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Single Mega MEnu -->
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="#">pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../about.html">about</a></li>
+                                            <li><a href="shop.html">shop</a></li>
+                                            <li><a href="shop-sidebar.html">shop sidebar</a></li>
+                                            <li><a href="product-details-sticky-right.html">product details</a></li>
+                                            <li><a href="../cart.html">cart</a></li>
+                                            <li><a href="wishlist.html">wishlist</a></li>
+                                            <li><a href="checkout.html">checkout</a></li>
+                                            <li><a href="team.html">team</a></li>
+                                            <li><a href="login-register.html">login & register</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="mobile-menu clearfix visible-xs visible-sm">
+                                <nav id="mobile_dropdown">
+                                    <ul>
+                                        <li><a href="../main/index.html">Home</a>
+                                            <ul>
+                                                <li><a href="../main/index.html">Home 1</a></li>
+                                                <li><a href="index-2.html">Home 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">portfolio</a>
+                                            <ul class="dropdown">
+                                                <li><a href="portfolio-gutter-box-3.html">Boxed Gutter 3 Col</a></li>
+                                                <li><a href="portfolio-gutter-full-wide-4.html">Wide Gutter 4 Col </a></li>
+                                                <li><a href="portfolio-card-box-3.html">Card Gutter 3 Col </a></li>
+                                                <li><a href="portfolio-masonry-3.html">Masonry Box 3 Col </a></li>
+                                                <li><a href="portfolio-gutter-masonry-fullwide-4.html">Masonry Wide 4 Col </a></li>
+                                                <li><a href="portfolio-gutter-box-3-carousel.html">carousel Gutter 3 Col </a></li>
+                                                <li><a href="portfolio-justified-box-3.html">justified box 3 Col</a></li>
+                                                <li><a href="single-portfolio-gallery.html">Portfolio Details </a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog.html">blog</a>
+                                            <ul>
+                                                <li><a href="blog.html">blog 3 column</a></li>
+                                                <li><a href="blog-2-col-rightsidebar.html">2 col right siderbar</a></li>
+                                                <li><a href="blog-details-left-sidebar.html"> blog details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">pages</a>
+                                            <ul>
+                                                <li><a href="../about.html">about</a></li>
+                                                <li><a href="shop.html">shop</a></li>
+                                                <li><a href="shop-sidebar.html">shop sidebar</a></li>
+                                                <li><a href="product-details-sticky-right.html">product details</a></li>
+                                                <li><a href="../cart.html">cart</a></li>
+                                                <li><a href="wishlist.html">wishlist</a></li>
+                                                <li><a href="checkout.html">checkout</a></li>
+                                                <li><a href="team.html">team</a></li>
+                                                <li><a href="login-register.html">login & register</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>                          
+                        </div>
+                        <!-- End MAinmenu Ares -->
+                        <div class="col-md-2 col-sm-4 col-xs-3">  
+                            <ul class="menu-extra">
+                                <li class="search search__open hidden-xs"><span class="ti-search"></span></li>
+                                <li><a href="login-register.html"><span class="ti-user"></span></a></li>
+                                <li class="cart__menu"><span class="ti-shopping-cart"></span></li>
+                                <li class="toggle__menu hidden-xs hidden-sm"><span class="ti-menu"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area"></div>
+                </div>
+            </div>
+            <!-- End Mainmenu Area -->
+        </header>
+        <!-- End Header Style -->
+        <div class="body__overlay"></div>
+        <!-- Start Offset Wrapper -->
+        <div class="offset__wrapper">
+            <!-- Start Search Popap -->
+            <div class="search__area">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-12" >
+                            <div class="search__inner">
+                                <form action="#" method="POST" id="filt-search">
+                                    <input placeholder="Search here... " type="text">
+                                    <button type="submit" title="search_button"></button>
+                                </form>
+                                <div class="search__close__btn">
+                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Popap -->
+            <!-- Start Offset MEnu -->
+            <div class="offsetmenu">
+                <div class="offsetmenu__inner">
+                    <div class="offsetmenu__close__btn">
+                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                    </div>
+                    <div class="off__contact">
+                        <div class="logo">
+                            <a href="../main/index.html">
+                                <img src="{{ url_for ('static', filename='images/logo/logo.png') }}" alt="logo">
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetu adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <ul class="sidebar__thumd">
+                        <li><a href="#"><img src="images/sidebar-img/1.jpg" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="images/sidebar-img/2.jpg" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="images/sidebar-img/3.jpg" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="images/sidebar-img/4.jpg" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="images/sidebar-img/5.jpg" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="images/sidebar-img/6.jpg" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="images/sidebar-img/7.jpg" alt="sidebar images"></a></li>
+                        <li><a href="#"><img src="images/sidebar-img/8.jpg" alt="sidebar images"></a></li>
+                    </ul>
+                    <div class="offset__widget">
+                        <div class="offset__single">
+                            <h4 class="offset__title">Language</h4>
+                            <ul>
+                                <li><a href="#"> Engish </a></li>
+                                <li><a href="#"> French </a></li>
+                                <li><a href="#"> German </a></li>
+                            </ul>
+                        </div>
+                        <div class="offset__single">
+                            <h4 class="offset__title">Currencies</h4>
+                            <ul>
+                                <li><a href="#"> USD : Dollar </a></li>
+                                <li><a href="#"> EUR : Euro </a></li>
+                                <li><a href="#"> POU : Pound </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offset__sosial__share">
+                        <h4 class="offset__title">Follow Us On Social</h4>
+                        <ul class="off__soaial__link">
+                            <li><a class="bg--twitter" href="#"  title="Twitter"><i class="zmdi zmdi-twitter"></i></a></li>
+                            
+                            <li><a class="bg--instagram" href="#" title="Instagram"><i class="zmdi zmdi-instagram"></i></a></li>
+
+                            <li><a class="bg--facebook" href="#" title="Facebook"><i class="zmdi zmdi-facebook"></i></a></li>
+
+                            <li><a class="bg--googleplus" href="#" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a></li>
+
+                            <li><a class="bg--google" href="#" title="Google"><i class="zmdi zmdi-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Offset MEnu -->
+            <!-- Start Cart Panel -->
+            <div class="shopping__cart">
+                <div class="shopping__cart__inner">
+                    <div class="offsetmenu__close__btn">
+                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                    </div>
+                    <div class="shp__cart__wrap">
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img src="images/product/sm-img/1.jpg" alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
+                                <span class="quantity">QTY: 1</span>
+                                <span class="shp__price">$105.00</span>
+                            </div>
+                            <div class="remove__btn">
+                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img src="images/product/sm-img/2.jpg" alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="product-details.html">Brone Candle</a></h2>
+                                <span class="quantity">QTY: 1</span>
+                                <span class="shp__price">$25.00</span>
+                            </div>
+                            <div class="remove__btn">
+                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="shoping__total">
+                        <li class="subtotal">Subtotal:</li>
+                        <li class="total__price">$130.00</li>
+                    </ul>
+                    <ul class="shopping__btn">
+                        <li><a href="../cart.html">View Cart</a></li>
+                        <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Cart Panel -->
+        </div>
+        <!-- End Offset Wrapper -->
+        <!-- Start Bradcaump area -->
+        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(/static/images/bg/2.jpg) no-repeat scroll center center / cover ;">
+            <div class="ht__bradcaump__wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="bradcaump__inner text-center">
+                                <h2 class="bradcaump-title">Shop Sidebar</h2>
+                                <nav class="bradcaump-inner">
+                                  <a class="breadcrumb-item" href="../main/index.html">Home</a>
+                                  <span class="brd-separetor">/</span>
+                                  <span class="breadcrumb-item active">Shop Sidebar</span>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Bradcaump area --> 
+        <!-- Start Our ShopSide Area -->
+        <section class="htc__shop__sidebar bg__white ptb--120">
+            <div class="container">
+                <div class="row">
+                    {% if form %}
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12" id="filter_ajax">
+                        <div class="htc__shop__left__sidebar">
+                            <!-- Start Range -->
+                            <!-- End Range -->
+
+                            <!-- с элмаркета -->
+                            <div class="all_page">
+                                <div class="left_block_filter">
+                                    <form action="#" id="filt-all" method="POST">
+
+                                      <div class="cd-filter-block htc-grid-range">
+                                          <h4 class="list_filter section-title-4">FILTER BY PRICE</h4>
+                                          <div class="cd-filter-content content-shopby">
+                                              <div class="price_filter s-filter clear">
+                                                      <div id="slider-range"></div>
+                                                      <div class="slider__range--output">
+                                                          <div class="price__output--wrap">
+                                                              <div class="price--output" style="display: flex;">
+                                                                  <span>Price ₽:</span>
+                                                                  {{ form.minprice(type='number', class='min_price', id='amount', placeholder='0', title='min_value', onkeydown="javascript: return event.keyCode === 8 ||
+                                                                    event.keyCode === 46 ? true : !isNaN(Number(event.key))", onchange="filter_value('price')") }}
+                                                                <span style="font-weight: bold;"> - </span>
+                                                                {{ form.maxprice(type='number', class='max_price', id='mount', placeholder='306300', title='max_value', onkeydown="javascript: return event.keyCode === 8 ||
+                                                                    event.keyCode === 46 ? true : !isNaN(Number(event.key))", onchange="filter_value('price')") }}
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                              </div>
+
+                                          </div>
+                                      </div>
+
+                                      <!-- с элмаркета -->
+
+
+
+
+                                      <div class="cd-filter-block htc-grid-range">
+                                          <h4 class="list_filter section-title-4">CHOOSE BRAND</h4>
+                                          <ul class="cd-filter-content cd-filters list sidebar__list">
+                                              {% if filter_clothes != False %}
+                                                  {% for ind, i in enumerate(form.brand) %}
+                                                    {% for ind2, brand in enumerate(enabled_brand) %}
+                                                        {% if i.data == filter_brand[ind2] and filter_brand[0] != 'default'%}
+                                                            {% for ind3, brand_enabled in enumerate(enabled_brand) %}
+                                                                {% if i.data == brand_enabled[0] %}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')", checked='checked') }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ brand[1] }}</li>
+                                                                    {% break %}
+                                                                {% elif ind3 == enabled_brand|length - 1 %}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand',  disabled='disabled') }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ 0 }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                            {% break %}
+                                                        {% elif i.data == brand[0]  %}
+                                                            {% for ind3, brand_enabled in enumerate(filter_brand) %}
+                                                                {% if i.data == brand_enabled and  filter_brand[0] != 'default' %}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')", checked='checked') }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ brand[1] }}</li>
+                                                                    {% break %}
+                                                                {% elif ind3 == filter_brand|length - 1 %}
+                                                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')") }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                       {{ brand[1] }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                            {% break %}
+                                                        {% elif ind2 == enabled_brand|length - 1 and filter_color[0] == 'default' and filter_size[0] == 'default' and target_form != 'price' %}
+                                                            {% for b in enabled_brand %}
+                                                                {% if i.data == b[0] %}
+                                                                    <li class="{{ i.data }}" style="display: flex; justify-content: space-between;"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')") }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ i.label }}</li>
+                                                                    {% break %}
+                                                                {% else %}
+                                                                    <li  style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand',  disabled="disabled") }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ 0 }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        {% elif ind2 == enabled_brand|length - 1 and (filter_color[0] != 'default' or filter_size[0] != 'default' or target_form == 'price') %}
+                                                            <li  style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand',  disabled="disabled") }}
+                                                               {{ i.label(i.data) }}</div>
+                                                           {{ 0 }}</li>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                  {% endfor %}
+                                              {% else %}
+                                                {% for ind, i in enumerate(form.brand) %}
+                                                    <li  style="display: flex; justify-content: space-between;"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_brand', onclick="filter_value('brand')") }}
+                                                               {{ i.label(i.data) }}</div>
+                                                           {{ enabled_brand[ind][1] }}</li>
+                                                {% endfor %}
+                                              {% endif %}
+                                          </ul>
+                                      </div>
+
+
+                                      <div class="cd-filter-block htc-grid-range">
+                                          <h4 class="list_filter section-title-4">CHOOSE COLOUR</h4>
+                                          <ul class="cd-filter-content cd-filters list sidebar__list">
+                                              {% if filter_clothes != False %}
+                                                  {% for ind, i in enumerate(form.color) %}
+                                                    {% for ind2, c in enumerate(enabled_color) %}
+                                                        {% if i.data == filter_color[ind2] and filter_color[0] != 'default'%}
+                                                            {% for ind3, color_enabled in enumerate(enabled_color) %}
+                                                                {% if i.data == color_enabled[0] %}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')", checked='checked') }}<i class="zmdi zmdi-circle"></i>
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ c[1] }}</li>
+                                                                    {% break %}
+                                                                {% elif ind3 == enabled_color|length - 1 %}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', disabled='disabled') }}<i class="zmdi zmdi-circle"></i>
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ 0 }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                            {% break %}
+                                                        {% elif i.data == c[0]  %}
+                                                            {% for ind3, color_enabled in enumerate(filter_color) %}
+                                                                {% if i.data == color_enabled and  filter_color[0] != 'default' %}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')", checked='checked') }}<i class="zmdi zmdi-circle"></i>
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ c[1] }}</li>
+                                                                    {% break %}
+                                                                {% elif ind3 == filter_color|length - 1 %}
+                                                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')") }}<i class="zmdi zmdi-circle"></i>
+                                                                       {{ i.label(i.data) }}</div>
+                                                                       {{ c[1] }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                            {% break %}
+                                                        {% elif ind2 == enabled_color|length - 1 and (filter_brand[0] == 'default' and filter_size[0] == 'default' and target_form != 'price' ) %}
+                                                            {% for color in enabled_color %}
+                                                                {% if i.data == color[0] %}
+                                                                    <li class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')") }}<i class="zmdi zmdi-circle"></i>
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ i.label }}</li>
+                                                                    {% break %}
+                                                                {% else %}
+                                                                    <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color',  disabled='disabled') }}<i class="zmdi zmdi-circle"></i>
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ 0 }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        {% elif ind2 == enabled_color|length - 1 and (filter_brand[0] != 'default' or filter_size[0] != 'default' or target_form == 'price') %}
+                                                            <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color',  disabled='disabled') }}<i class="zmdi zmdi-circle"></i>
+                                                               {{ i.label(i.data) }}</div>
+                                                           {{ 0 }}</li>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                  {% endfor %}
+                                              {% else %}
+                                                {% for ind, i in enumerate(form.color) %}
+                                                    <li class="{{i.data}}" style="display: flex; justify-content: space-between; "><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_color', onclick="filter_value('color')") }}<i class="zmdi zmdi-circle"></i>
+                                                               {{ i.label(i.data) }}</div>
+                                                           {{  enabled_color[ind][1] }}</li>
+                                                {% endfor %}
+                                              {% endif %}
+                                          </ul>
+                                      </div>
+
+
+                                      <div class="cd-filter-block htc-grid-range">
+                                          <h4 class="list_filter section-title-4">CHOOSE SIZE</h4>
+                                          <ul class="cd-filter-content cd-filters list sidebar__list">
+                                              {% if filter_clothes != False %}
+                                                  {% for ind, i in enumerate(form.size) %}
+                                                    {% for ind2, size in enumerate(enabled_size) %}
+                                                        {% if i.data|string == filter_size[ind2] and filter_size[0] != 'default'%}
+                                                            {% for ind3, size_enabled in enumerate(enabled_size) %}
+                                                                {% if i.data == size_enabled[0] and size[1] != 0%}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', onclick="filter_value('size')", checked='checked') }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ size[1] }}</li>
+                                                                    {% break %}
+                                                                {% elif ind3 == enabled_size|length - 1 %}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', disabled='disabled') }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ 0 }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                            {% break %}
+                                                        {% elif i.data == size[0] and size[1] != 0 %}
+                                                            {% for ind3, size_enabled in enumerate(filter_size) %}
+                                                                {% if i.data == size_enabled and  filter_size[0] != 'default' %}
+                                                                    <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size',onclick="filter_value('size')", checked='checked') }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ size[1] }}</li>
+                                                                    {% break %}
+                                                                {% elif ind3 == filter_size|length - 1 %}
+                                                                        <li  class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', onclick="filter_value('size')") }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                       {{ size[1] }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                            {% break %}
+                                                        {% elif ind2 == enabled_size|length - 1 and (filter_brand[0] == 'default' and filter_color[0] == 'default' and  target_form != 'price') %}
+                                                            {% for size_two_check in enabled_size %}
+                                                                {% if i.data == size_two_check[0] %}
+                                                                    <li class="{{i.data}}" style="display: flex; justify-content: space-between"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', onclick="filter_value('size')") }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                    {{ i.label  }}</li>
+                                                                    {% break %}
+                                                                {% else %}
+                                                                    <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', disabled='disabled') }}
+                                                                       {{ i.label(i.data) }}</div>
+                                                                   {{ 0 }}</li>
+                                                                    {% break %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        {% elif ind2 == enabled_size|length - 1 and (filter_brand[0] != 'default' or filter_color[0] != 'default' or target_form == 'price') %}
+                                                            <li class="{{i.data}}" style="display: flex; justify-content: space-between; color: #808080"><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', disabled='disabled') }}
+                                                               {{ i.label(i.data) }}</div>
+                                                           {{ 0 }}</li>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                  {% endfor %}
+                                              {% else %}
+                                                {% for ind, i in enumerate(form.size) %}
+                                                    <li class="{{i.data}}" style="display: flex; justify-content: space-between; "><div style="display: flex; align-items: baseline">{{ i(class='filter_choice_size', onclick="filter_value('size')") }}
+                                                               {{ i.label(i.data) }}</div>
+                                                           {{  enabled_size[ind][1] }}</li>
+                                                {% endfor %}
+                                              {% endif %}
+                                          </ul>
+                                      </div>
+
+                                          <div style="display: flex; justify-content: space-around; margin: 5px 0;">
+                                               {{ form.submit_all_filter(style="width:35%") }}
+                                                {{ form.cancel(style="width:35%", onclick="resetForms()") }}
+                                          </div>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- с элмаркета -->
+                    {% else %}
+                    <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 float-right-style">
+                        <div class="categories-menu mrg-xs">
+                            <div class="category-heading">
+                               <h3>By men</h3>
+                            </div>
+                            <div class="category-menu-list">
+                                <ul>
+                                    {% for i in search %}
+                                        <li><a href="{{ url_for('catalog.shope_sidebar_level_three', name_category3=i[0].replace(' ', '_')) }}">{{ i[0] }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endif %}
+                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 smt-30">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <div class="producy__view__container">
+                                    <!-- Start Short Form -->
+                                    <div class="product__list__option">
+                                        <div class="order-single-btn">
+                                            <form  method="POST" action="#">
+                                                {{ form2.hidden_tag() }}
+                                                {% for i in form2 %}
+                                                    {{ i(title="sort", class="select-color selectpicker", onchange="javascript:this.form.submit()") }}
+                                                {% endfor %}
+                                            </form>
+                                        </div>
+                                        <div class="shp__pro__show">
+                                            {{ pagination.info }}
+                                        </div>
+                                    </div>
+                                    <!-- End Short Form -->
+                                    <!-- Start List And Grid View -->
+                                    <ul class="view__mode" role="tablist">
+                                        <li role="presentation" class="grid-view active"><a href="#grid-view" role="tab" data-toggle="tab"><i class="zmdi zmdi-grid"></i></a></li>
+                                        <li role="presentation" class="list-view"><a href="#list-view" role="tab" data-toggle="tab"><i class="zmdi zmdi-view-list"></i></a></li>
+                                    </ul>
+                                    <!-- End List And Grid View -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="shop__grid__view__wrap another-product-style">
+                                <!-- Start Single View -->
+                                <div role="tabpanel" id="grid-view" class="single-grid-view tab-pane fade in active clearfix" style="text-align: center;">
+                                    <!-- Start Single Product -->
+                                    {% for i in Clothes %}
+                                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                                        <div class="product">
+                                            <div class="product__inner">
+                                                <div class="pro__thumb">
+                                                    <a href="{{ url_for('catalog.product_details', article=i[0].product_article, category=(i[0].name).replace(' ', '_')) }}">
+                                                        <img src="/static/{{i[0].picture_product.split(sep='\n', maxsplit=-1)[0]}}" alt="product images">
+                                                    </a>
+                                                </div>
+                                                <div class="product__hover__info">
+                                                    <ul class="product__action">
+<!--                                                        <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>-->
+                                                        <li><a title="Add To Cart" href="../cart.html"><span class="ti-shopping-cart"></span></a></li>
+                                                        <li><a title="Wishlist" href="wishlist.html"><span class="ti-heart"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product__details">
+                                                <h2><a href="product-details.html">{{ i[0].brand}}</a></h2>
+                                                <h2><a href="{{ url_for('catalog.product_details', article=i[0].product_article, category=(i[0].category_product).replace(' ', '_')) }}">{{ i[0].name }}</a></h2>
+                                                <ul class="product__price">
+                                                    {% if i[1].old_price %}
+                                                    <li class="old__price">{{ i[1].old_price }}₽</li>
+                                                    <li class="new__price">{{ i[1].current_price}}₽</li>
+                                                    {% else %}
+                                                    <li class="new__price">{{ i[1].current_price}}₽</li>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                    <!-- End Single Product -->
+                                    <div style="display: inline-flex; padding: 50px 0; justify-content: center">
+                                        {{ pagination.links }}
+                                    </div>
+                                </div>
+                                <!-- End Single View -->
+                                <!-- Start Single View -->
+                                <div role="tabpanel" id="list-view" class="single-grid-view tab-pane fade clearfix">
+                                    <!-- Start List Content-->
+                                    {% for i in Clothes %}
+                                    <div class="single__list__content clearfix">
+                                        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                                            <div class="list__thumb">
+                                                <a href="{{ url_for('catalog.product_details', article=i[0].product_article, category=(i[0].name).replace(' ', '_')) }}">
+                                                    <img src="/static/{{i[0].picture_product.split(sep='\n', maxsplit=-1)[0]}}" alt="product images">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-lg-9 col-sm-8 col-xs-12">
+                                            <div class="list__details__inner">
+                                                <h2><a href="{{ url_for('catalog.product_details', article=i[0].product_article, category=(i[0].category_product).replace(' ', '_')) }}">{{ i[0].name }}</a></h2>
+                                                <h2><a href="product-details.html">{{ i[0].brand }}</a></h2>
+                                                <p>{{ i[0].description }}</p>
+                                                <ul class="product__price">
+                                                    {% if i[1].old_price %}
+                                                    <li class="old__price">{{ i[1].old_price }}₽</li>
+                                                    <li class="new__price">{{ i[1].current_price}}₽</li>
+                                                    {% else %}
+                                                    <li class="new__price">{{ i[1].current_price}}₽</li>
+                                                    {% endif %}
+                                                </ul>
+                                                <div class="shop__btn">
+                                                    <a class="htc__btn" href="../cart.html"><span class="ti-shopping-cart"></span>Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                    <!-- End List Content-->
+                                    <div style="display: flex; padding: 50px 0; justify-content: center">
+                                        {{ pagination.links }}
+                                    </div>
+                                </div>
+                                <!-- End Single View -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Our ShopSide Area -->
+        <!-- Start Footer Area -->
+        <footer class="htc__foooter__area gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__container clearfix">
+                         <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-3 col-sm-6">
+                            <div class="ft__widget">
+                                <div class="ft__logo">
+                                    <a href="../main/index.html">
+                                        <img src="/static/images/logo/logo.png" alt="footer logo">
+                                    </a>
+                                </div>
+                                <div class="footer-address">
+                                    <ul>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-pin"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <p>194 Main Rd T, FS Rayed <br> VIC 3057, USA</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-email"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <a href="#"> info@example.com</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-phone-in-talk"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <p>+012 345 678 102 </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="social__icon">
+                                    <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-2 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Help</h2>
+                                <ul class="footer-categories">
+                                    <li><a href="shop-sidebar.html">Order status by number</a></li>
+                                    <li><a href="shop-sidebar.html">How to place an order</a></li>
+                                    <li><a href="shop-sidebar.html">How to choose the size</a></li>
+                                    <li><a href="shop-sidebar.html">Frequently Asked Questions</a></li>
+                                    <li><a href="shop-sidebar.html">My orders</a></li>
+                                    <li><a href="shop-sidebar.html">Loyalty Program</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-2 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Infomation</h2>
+                                <ul class="footer-categories">
+                                    <li><a href="../about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Returns & Exchanges</a></li>
+                                    <li><a href="#">Shipping & Delivery</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-3 col-lg-offset-1 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Newsletter</h2>
+                                <div class="newsletter__form">
+                                    <p>Subscribe to our newsletter and get 10% off your first purchase .</p>
+                                    <div class="input__box">
+                                        <div id="mc_embed_signup">
+                                            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                                {{ form2.hidden_tag() }}
+                                                <div id="mc_embed_signup_scroll" class="htc__news__inner">
+                                                    <div class="news__input">
+                                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+                                                    </div>
+                                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                                                    <div class="clearfix subscribe__btn"><input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="bst__btn btn--white__color">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                    </div>
+                </div>
+                <!-- Start Copyright Area -->
+                <div class="htc__copyright__area">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <div class="copyright__inner">
+                                <div class="copyright">
+                                    <p>© 2022 <a href="#">Store</a>
+                                    All Right Reserved.</p>
+                                </div>
+                                <ul class="footer__menu">
+                                    <li><a href="{{ url_for ('main.index')}}">Home</a></li>
+                                    {% if parent_cat  %}
+                                        <li><a href="{{ url_for ('catalog.shope_sidebar', name_category=parent_cat[0][0])}}">Product</a></li>
+                                    {% endif %}
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Copyright Area -->
+            </div>
+        </footer>
+        <!-- End Footer Area -->
+    </div>
+    <!-- Body catalog wrapper end -->
+    <!-- QUICKVIEW PRODUCT -->
+<!--    <div id="quickview-wrapper">-->
+<!--        &lt;!&ndash; Modal &ndash;&gt;-->
+<!--        <div class="modal fade" id="productModal" tabindex="-1" role="dialog">-->
+<!--            <div class="modal-dialog modal__container" role="document">-->
+<!--                <div class="modal-content">-->
+<!--                    <div class="modal-header">-->
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+<!--                    </div>-->
+<!--                    <div class="modal-body">-->
+<!--                        <div class="modal-product">-->
+<!--                            &lt;!&ndash; Start product images &ndash;&gt;-->
+<!--                            <div class="product-images">-->
+<!--                                <div class="main-image images">-->
+<!--                                    <img alt="big images" src="images/product/big-img/1.jpg">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; end product images &ndash;&gt;-->
+<!--                            <div class="product-info">-->
+<!--                                <h1>Simple Fabric Bags</h1>-->
+<!--                                <div class="rating__and__review">-->
+<!--                                    <ul class="rating">-->
+<!--                                        <li><span class="ti-star"></span></li>-->
+<!--                                        <li><span class="ti-star"></span></li>-->
+<!--                                        <li><span class="ti-star"></span></li>-->
+<!--                                        <li><span class="ti-star"></span></li>-->
+<!--                                        <li><span class="ti-star"></span></li>-->
+<!--                                    </ul>-->
+<!--                                    <div class="review">-->
+<!--                                        <a href="#">4 customer reviews</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="price-box-3">-->
+<!--                                    <div class="s-price-box">-->
+<!--                                        <span class="new-price">$17.20</span>-->
+<!--                                        <span class="old-price">$45.00</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="quick-desc">-->
+<!--                                    Designed for simplicity and made from high quality materials. Its sleek geometry and material combinations creates a modern look.-->
+<!--                                </div>-->
+<!--                                <div class="select__color">-->
+<!--                                    <h2>Select color</h2>-->
+<!--                                    <ul class="color__list">-->
+<!--                                        <li class="red"><a title="Red" href="#">Red</a></li>-->
+<!--                                        <li class="gold"><a title="Gold" href="#">Gold</a></li>-->
+<!--                                        <li class="orange"><a title="Orange" href="#">Orange</a></li>-->
+<!--                                        <li class="orange"><a title="Orange" href="#">Orange</a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                                <div class="select__size">-->
+<!--                                    <h2>Select size</h2>-->
+<!--                                    <ul class="color__list">-->
+<!--                                        <li class="l__size"><a title="L" href="#">L</a></li>-->
+<!--                                        <li class="m__size"><a title="M" href="#">M</a></li>-->
+<!--                                        <li class="s__size"><a title="S" href="#">S</a></li>-->
+<!--                                        <li class="xl__size"><a title="XL" href="#">XL</a></li>-->
+<!--                                        <li class="xxl__size"><a title="XXL" href="#">XXL</a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                                <div class="social-sharing">-->
+<!--                                    <div class="widget widget_socialsharing_widget">-->
+<!--                                        <h3 class="widget-title-modal">Share this product</h3>-->
+<!--                                        <ul class="social-icons">-->
+<!--                                            <li><a target="_blank" title="rss" href="#" class="rss social-icon"><i class="zmdi zmdi-rss"></i></a></li>-->
+<!--                                            <li><a target="_blank" title="Linkedin" href="#" class="linkedin social-icon"><i class="zmdi zmdi-linkedin"></i></a></li>-->
+<!--                                            <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i class="zmdi zmdi-pinterest"></i></a></li>-->
+<!--                                            <li><a target="_blank" title="Tumblr" href="#" class="tumblr social-icon"><i class="zmdi zmdi-tumblr"></i></a></li>-->
+<!--                                            <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i class="zmdi zmdi-pinterest"></i></a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="addtocart-btn">-->
+<!--                                    <a href="#">Add to cart</a>-->
+<!--                                </div>-->
+<!--                            </div>&lt;!&ndash; .product-info &ndash;&gt;-->
+<!--                        </div>&lt;!&ndash; .modal-product &ndash;&gt;-->
+<!--                    </div>&lt;!&ndash; .modal-body &ndash;&gt;-->
+<!--                </div>&lt;!&ndash; .modal-content &ndash;&gt;-->
+<!--            </div>&lt;!&ndash; .modal-dialog &ndash;&gt;-->
+<!--        </div>-->
+<!--        &lt;!&ndash; END Modal &ndash;&gt;-->
+<!--    </div>-->
+    <!-- END QUICKVIEW PRODUCT -->
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- jquery latest version -->
+    <script src="{{ url_for ('static', filename='js/vendor/jquery-1.12.0.min.js') }}"></script>
+    <!-- Bootstrap framework js -->
+    <script src="{{ url_for ('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="{{ url_for ('static', filename='js/plugins.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/slick.min.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/owl.carousel.min.js') }}"></script>
+    <!-- Waypoints.min.js. -->
+    <script src="{{ url_for ('static', filename='js/waypoints.min.js') }}"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="{{ url_for ('static', filename='js/main.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/filter/main.js') }}"></script>
+
+
+    <script>
+
+
+        function filter_value(target_form){
+
+
+            var checkbox;
+            checkbox = $('.filter_choice_brand:checked'); // получаем массив чекбоксов
+            var str_brand = "";
+            for(var i=0; i<checkbox.length; i++){// пробегаем весь массив
+                str_brand+=checkbox[i].value+",";// записываем каждое значение в строку и разделяем запятыми
+             // выводим получившуюся строку
+
+            }
+
+            var checkbox;
+            checkbox = $('.filter_choice_color:checked'); // получаем массив чекбоксов
+            var str_color = "";
+            for(var i=0; i<checkbox.length; i++){// пробегаем весь массив
+                str_color+=checkbox[i].value+",";// записываем каждое значение в строку и разделяем запятыми
+             // выводим получившуюся строку
+
+            }
+
+            var checkbox;
+            checkbox = $('.filter_choice_size:checked'); // получаем массив чекбоксов
+            var str_size = "";
+            for(var i=0; i<checkbox.length; i++){// пробегаем весь массив
+                str_size+=checkbox[i].value+",";// записываем каждое значение в строку и разделяем запятыми
+             // выводим получившуюся строку
+
+            }
+
+            $.post( "{{ url_for('catalog.search_ajax')}}", {
+                filter_value_brand: str_brand,
+                filter_value_color: str_color,
+                filter_value_size: str_size,
+                target_form: target_form,
+                ids: '{{ name_category }}',
+                type_chapter: 'catalog',
+                min_price: $('.min_price').val(),
+                max_price: $('.max_price').val(),
+             }).done(function(data) {
+                    $('#filter_ajax').html(data)
+             }).fail(function () {
+                alert(str);
+            });
+        }
+    </script>
+    <script>
+
+        var min_p
+        min_p = '{{ minimum_price }}';
+        var max_p
+        max_p = '{{ maximum_price }}';
+        var min_df
+        min_df = '{{ default_minimum_price }}';
+        var max_df
+        max_df = '{{ default_maximum_price }}';
+            $("#slider-range").slider({
+          range: true,
+          min: 0,
+          max: max_df,
+          values: [min_p, max_p],
+          slide: function(event, ui) {
+              $("#amount").val(ui.values[0]) + " - " + $("#mount").val(ui.values[1]);
+
+
+          }
+      });
+        $( "#slider-range" ).mouseup(function( event ){ // задаем функцию при отпускании кнопки мыши на элементе <div>
+            filter_value('price');
+	    });
+
+
+      $("#amount").val($("#slider-range").slider("values", 0)) +
+          " - " + $("#mount").val($("#slider-range").slider("values", 1));
+
+    </script>
+
+    <script>
+        resetForms = function(){
+            document.getElementById("filt-color").reset();
+            document.getElementById("filt-size").reset();
+            document.getElementById("filt-brand").reset();
+            document.getElementById("filt-price").reset();
+        }
+
+
+         Array.from(document.getElementsByClassName('old__price'), e => e.textContent = e.textContent.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+         Array.from(document.getElementsByClassName('new__price'), e => e.textContent = e.textContent.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+    </script>
+
+</body>
+
+</html>

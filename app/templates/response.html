@@ -1,0 +1,33 @@
+
+{% for i in Clothes %}
+<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+    <div class="product">
+        <div class="product__inner">
+            <div class="pro__thumb">
+                <a href="{{ url_for('main.product_details', article=i[0].product_article, category=i[0].category_product) }}">
+                    <img src="/static/{{i[0].picture_product.split(sep='\n', maxsplit=-1)[0]}}" alt="product images">
+                </a>
+            </div>
+            <div class="product__hover__info">
+                <ul class="product__action">
+                    <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
+                    <li><a title="Add To Cart" href="cart.html"><span class="ti-shopping-cart"></span></a></li>
+                    <li><a title="Wishlist" href="shopping/wishlist.html"><span class="ti-heart"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="product__details">
+            <h2><a href="product-details.html">{{ i[0].brand}}</a></h2>
+            <h2><a href="product-details.html">{{ i[0].name }}</a></h2>
+            <ul class="product__price">
+                {% if i[1].old_price %}
+                <li class="old__price">{{ i[1].old_price }}₽</li>
+                <li class="new__price">{{ i[1].current_price}}₽</li>
+                {% else %}
+                <li class="new__price">{{ i[1].current_price}}₽</li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endfor %}

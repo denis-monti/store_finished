@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tmart-Minimalist eCommerce HTML5 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for ('static', filename='images/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url_for ('static', filename='apple-touch-icon.png') }}">
+
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork catalog css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/bootstrap.min.css') }}">
+    <!-- Owl Carousel catalog css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/owl.theme.default.min.css') }}">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/core.css') }}">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/shortcode/shortcodes.css') }}">
+    <!-- Theme catalog style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style.css') }}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/responsive.css') }}">
+    <!-- User style -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css') }}">
+
+
+    <!-- Modernizr JS -->
+    <script src="{{ url_for ('static', filename='js/vendor/modernizr-2.8.3.min.js') }}"></script>
+</head>
+
+<h4 class="list_filter section-title-4">FILTER BY PRICE</h4>
+<div class="cd-filter-content content-shopby">
+    <div class="price_filter s-filter clear">
+            <div id="slider-range" onchange="filter_change()"></div>
+            <div class="slider__range--output" >
+                <div class="price__output--wrap" >
+                    <div class="price--output" style="display: flex;">
+                        <span>Price ₽:</span>
+                        <input type="number" class='min' id='amount' placeholder='0' title='min_value' onkeydown="javascript: return event.keyCode === 8 ||
+                            event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <span style="font-weight: bold;"> - </span>
+                        <input type="number" class='max' id='mount' placeholder='306300' title='max_value' onkeydown="javascript: return event.keyCode === 8 ||
+                            event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<script src="{{ url_for ('static', filename='js/vendor/jquery-1.12.0.min.js') }}"></script>
+<!-- Bootstrap framework js -->
+<script src="{{ url_for ('static', filename='js/bootstrap.min.js') }}"></script>
+<!-- All js plugins included in this file. -->
+<script src="{{ url_for ('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for ('static', filename='js/slick.min.js') }}"></script>
+<script src="{{ url_for ('static', filename='js/owl.carousel.min.js') }}"></script>
+<!-- Waypoints.min.js. -->
+<script src="{{ url_for ('static', filename='js/waypoints.min.js') }}"></script>
+<!-- Main js file that contents all jQuery plugins activation. -->
+<script src="{{ url_for ('static', filename='js/main.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/filter/main.js') }}"></script>
+
+<script>
+        var min_p
+        min_p = '{{ minimum_price }}';
+        var max_p
+        max_p = '{{ maximum_price }}';
+        var min_df
+        min_df = '{{  minimum_price }}';
+        var max_df
+        max_df = '{{ maximum_price }}';
+            $("#slider-range").slider({
+          range: true,
+          min: 0,
+          max: max_df,
+          values: [min_p, max_p],
+          slide: function(event, ui) {
+              $("#amount").val(ui.values[0]) + " - " + $("#mount").val(ui.values[1]);
+                }
+      });
+      $("#amount").val($("#slider-range").slider("values", 0)) +
+          " - " + $("#mount").val($("#slider-range").slider("values", 1));
+
+</script>

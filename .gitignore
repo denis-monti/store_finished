@@ -1,0 +1,8 @@
+/venv
+/work
+/idea
+/text_directory
+app_dump.sql
+sqldiff.exe
+sqlite3.exe
+sqlite3_analyzer.exe
