@@ -11,10 +11,23 @@ from flask import current_app, url_for, json
 from app.search import add_to_index, remove_from_index, query_index
 
 class SearchableMixin(object):
+    # @classmethod
+    # def search(cls, expression, page, per_page, sort_data):
+    #     ids, total, ids_sum = query_index(cls.__tablename__, expression, page, per_page)
+    #     if total['value'] == 0:
+    #         return cls.query.filter_by(id_Product=0), 0, []
+    #     when = []
+    #     for i in range(len(ids)):
+    #         when.append((ids[i], i))
+    #     print()
+    #     return db.session.query(cls, Price).filter(cls.id_Product.in_(ids)).join(Price,
+    #         Products.product_article == Price.product_article_price).order_by(
+    #         db.case(when, value=cls.id_Product)), total['value'], ids_sum
     @classmethod
     def search(cls, expression, page):
         total, ids_sum = query_index(cls.__tablename__, expression, page)
         return total['value'], ids_sum
+        cls.reindex()
 
 
     @classmethod
@@ -24,6 +37,7 @@ class SearchableMixin(object):
             'update': list(session.dirty),
             'delete': list(session.deleted)
         }
+        cls.reindex()
 
     @classmethod
     def after_commit(cls, session):
@@ -37,11 +51,14 @@ class SearchableMixin(object):
             if isinstance(obj, SearchableMixin):
                 remove_from_index(obj.__tablename__, obj)
         session._changes = None
+        cls.reindex()
 
     @classmethod
     def reindex(cls):
         for obj in cls.query:
             add_to_index(cls.__tablename__, obj)
+
+
 
 db.event.listen(db.session, 'before_commit', SearchableMixin.before_commit)
 db.event.listen(db.session, 'after_commit', SearchableMixin.after_commit)
@@ -201,6 +218,7 @@ class Products(SearchableMixin, BaseModel, db.Model):
 
     def __repr__(self):
         return '<Products {} {} {} {} {}>'.format(self.id_Product, self.brand, self.product_article, self.category_product, self.picture_product)
+
 
 class Balance(BaseModel, db.Model):
     id_balance = db.Column(db.Integer, primary_key=True)

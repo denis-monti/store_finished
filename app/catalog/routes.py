@@ -205,6 +205,8 @@ def search():
             res = request.cookies.get('cart')
             article_size_cart = json.loads(res.replace("'", '"'))
             clothes_count = str(len(article_size_cart))
+        else:
+            clothes_count = 0
     form_sort = SortForm()
     form_filter = SimpleForm()
 
